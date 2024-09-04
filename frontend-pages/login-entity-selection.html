@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>Synechron</title>
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="">
+    <meta name="Description" content="" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#f0f0f0">
+    <!-- Mobile header color Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#f0f0f0">
+    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="shortcut icon" href="https://www.synechron.com/themes/synechron/images/favicon.png" type="image/png" />
+ <link rel='stylesheet' type='text/css' href='styles.css'/></head>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<body>
+    <home>
+
+        <!-- <header class="ad-bg-white">
+            <section class="ad-container ad-py-12 ">
+                <ul class="ad-flex ad-justify-between ad-text-14">
+                    <li class="ad-flex ad-w-3/5 ad-items-center">
+                        <a href="">
+
+                            <svg width="113" height="32" viewBox="0 0 113 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M45.3412 7.60461L37.4395 24.3655H37.6844H40.4424L41.9664 20.9658H50.1391L51.6377 24.3655H54.4961H54.7281L46.8901 7.60461H45.3412ZM42.9107 18.8L46.0841 11.6721L49.2072 18.8H42.9107Z"
+                                        fill="#002A3A" />
+                                    <path
+                                        d="M63.9032 7.60461H57.0654V24.3661H63.9032C66.5477 24.3661 68.6762 23.5978 70.2753 22.049C71.8744 20.5125 72.668 18.485 72.668 15.954C72.668 13.4478 71.8744 11.4203 70.2753 9.89629C68.6762 8.37283 66.5477 7.60461 63.9032 7.60461ZM68.1468 20.311C67.0766 21.3942 65.6412 21.9355 63.853 21.9355H59.9238V10.0227H63.853C65.6412 10.0227 67.0765 10.564 68.1468 11.6467C69.2175 12.7298 69.7588 14.1782 69.7588 15.9788C69.7588 17.78 69.2175 19.2278 68.1468 20.311Z"
+                                        fill="#002A3A" />
+                                    <path
+                                        d="M110.629 7.60437H109.106L103.275 20.374L97.4448 7.60437H95.896L93.8555 24.3658H96.6258L97.7846 13.6367L102.558 24.3658H104.018L108.867 13.6615L110.038 24.3658H112.682L110.629 7.60437Z"
+                                        fill="#002A3A" />
+                                    <path
+                                        d="M91.9652 15.0533H91.7839H91.6626H86.3748L84.1334 17.2947H89.1265C89.0385 18.5162 88.5474 19.574 87.6533 20.4681C86.5323 21.5513 85.1725 22.0926 83.5734 22.0926C81.8987 22.0926 80.5005 21.5134 79.3925 20.3676C78.2715 19.2218 77.7178 17.761 77.7178 15.9728C77.7178 14.197 78.2845 12.7362 79.4179 11.5904C80.5508 10.4445 81.9489 9.86482 83.5982 9.86482C85.4999 9.86482 87.2254 10.7843 88.3713 12.2575H88.3724C88.4159 12.3117 88.4458 12.349 88.4593 12.3665L90.3598 10.466L90.3294 10.4287L90.3299 10.4338C89.5498 9.4618 88.583 8.69978 87.4139 8.13985C86.1925 7.57314 84.9084 7.28357 83.548 7.28357C81.105 7.28357 79.0397 8.10203 77.365 9.75136C75.6778 11.4013 74.834 13.479 74.834 15.9728C74.834 18.4784 75.6649 20.5561 77.3148 22.206C78.9641 23.8554 81.0294 24.6744 83.5232 24.6744C85.9786 24.6744 88.0309 23.8429 89.6684 22.1676C91.2675 20.5686 92.0605 18.5918 92.0605 16.2115C92.0605 15.7837 92.0481 15.4563 92.0103 15.2294C91.9951 15.1204 91.9652 15.0533 91.9652 15.0533Z"
+                                        fill="#002A3A" />
+                                    <path
+                                        d="M27.8095 16.0006L32.0011 15.1624L27.7434 14.765L31.8256 13.495L27.5515 13.5446L31.4779 11.8518L27.2315 12.3519L30.9591 10.2606L26.7884 11.1976L30.2773 8.72589L26.2273 10.0975L29.4385 7.27467L25.5534 9.05892L28.4518 5.91716L24.7761 8.09991L27.3314 4.67255L23.9006 7.22501L26.0845 3.54929L22.9422 6.4472L24.727 2.56319L21.9053 5.77436L23.2752 1.72497L20.8029 5.21273L21.7433 1.04199L19.6509 4.7702L20.1476 0.524384L18.4554 4.45015L18.5073 0.175547L17.2344 4.25767L16.8399 0L16.0011 4.19333L15.1623 0L14.7667 4.25767L13.4938 0.175547L13.5446 4.45015L11.853 0.524384L12.3519 4.7702L10.2584 1.04199L11.1976 5.21273L8.72645 1.72497L10.0953 5.77436L7.27411 2.56319L9.05947 6.4472L5.91717 3.54929L8.09935 7.22501L4.67085 4.67255L7.22388 8.09991L3.54928 5.91716L6.44662 9.05892L2.56262 7.27467L5.77492 10.0975L1.72385 8.72589L5.21217 11.1976L1.04142 10.2606L4.76964 12.3519L0.524389 11.8518L4.44902 13.5446L0.175552 13.495L4.25599 14.765L0 15.1624L4.19163 16.0006L0 16.8399L4.25598 17.2339L0.175547 18.5079L4.44901 18.4554L0.524384 20.147L4.76964 19.6503L1.04142 21.7428L5.21217 20.8035L1.72385 23.2741L5.77492 21.9047L2.56262 24.727L6.44662 22.9416L3.54928 26.0845L7.22388 23.9023L4.67085 27.3308L8.09934 24.7761L5.91716 28.4524L9.05947 25.5528L7.2741 29.4391L10.0953 26.2273L8.72644 30.2795L11.1976 26.7884L10.2584 30.9586L12.3519 27.2326L11.853 31.4768L13.5446 27.5521L13.4938 31.8261L14.7667 27.7435L15.1623 32L16.0011 27.8095L16.8399 32L17.2344 27.7435L18.5073 31.8261L18.4554 27.5521L20.1476 31.4768L19.6509 27.2326L21.7433 30.9586L20.8029 26.7884L23.2752 30.2795L21.9053 26.2273L24.727 29.4391L22.9422 25.5528L26.0845 28.4524L23.9006 24.7761L27.3314 27.3308L24.7761 23.9023L28.4518 26.0845L25.5534 22.9416L29.4385 24.727L26.2273 21.9047L30.2773 23.2741L26.7884 20.8035L30.9591 21.7428L27.2315 19.6503L31.4779 20.147L27.5515 18.4554L31.8256 18.5079L27.7434 17.2339L32.0011 16.8399L27.8095 16.0006ZM16.0006 24.3883C11.376 24.3883 7.61335 20.6263 7.61335 16.0011C7.61335 11.3766 11.376 7.61449 16.0006 7.61449C20.6251 7.61449 24.3872 11.3766 24.3872 16.0011C24.3872 20.6263 20.6251 24.3883 16.0006 24.3883Z"
+                                        fill="#84754E" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="112.683" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </header> -->
+        <header class="ad-bg-blue-header">
+            <section class="ad-container ad-py-12 ">
+                <ul class="ad-flex ad-justify-between ad-text-14">
+                    <li class="ad-flex ad-items-center">
+                        <a class="ad-inline-block ad-mr-40" href="">
+                            <svg width="99" height="28" viewBox="0 0 99 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="99"
+                                    height="28">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H98.5973V28H0V0Z"
+                                        fill="white" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M39.6737 6.65408L32.7596 21.3199H32.9739H35.3871L36.7206 18.3451H43.8718L45.1831 21.3199H47.6842H47.8871L41.0289 6.65408H39.6737ZM37.547 16.45L40.3237 10.2131L43.0564 16.45H37.547Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M55.9154 6.65399H49.9323V21.3203H55.9154C58.2293 21.3203 60.0918 20.6481 61.491 19.2928C62.8902 17.9484 63.5846 16.1744 63.5846 13.9597C63.5846 11.7668 62.8902 9.99274 61.491 8.65921C60.0918 7.32618 58.2293 6.65399 55.9154 6.65399ZM59.6285 17.7721C58.692 18.7199 57.4361 19.1935 55.8714 19.1935H52.4333V8.76985H55.8714C57.4361 8.76985 58.692 9.2435 59.6285 10.1908C60.5654 11.1386 61.039 12.4059 61.039 13.9814C61.039 15.5575 60.5654 16.8243 59.6285 17.7721Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M96.801 6.65381H95.4679L90.366 17.8272L85.2645 6.65381H83.9093L82.1238 21.3201H84.5479L85.5618 11.9321L89.7382 21.3201H91.0164L95.2585 11.9538L96.2834 21.3201H98.5973L96.801 6.65381Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M80.4697 13.1717H80.3111H80.2049H75.5781L73.6168 15.1329H77.9858C77.9087 16.2017 77.4791 17.1273 76.6967 17.9096C75.7159 18.8574 74.526 19.3311 73.1268 19.3311C71.6615 19.3311 70.4381 18.8243 69.4686 17.8217C68.4877 16.8191 68.0032 15.5409 68.0032 13.9763C68.0032 12.4224 68.4991 11.1442 69.4908 10.1416C70.482 9.13903 71.7054 8.63179 73.1486 8.63179C74.8125 8.63179 76.3223 9.43634 77.325 10.7254H77.326C77.364 10.7728 77.3902 10.8054 77.402 10.8207L79.0649 9.15779L79.0383 9.12519L79.0388 9.12963C78.3562 8.27915 77.5102 7.61239 76.4873 7.12244C75.4185 6.62657 74.2949 6.3732 73.1046 6.3732C70.967 6.3732 69.1599 7.08936 67.6945 8.53252C66.2182 9.97618 65.4799 11.7942 65.4799 13.9762C65.4799 16.1687 66.2069 17.9867 67.6505 19.4304C69.0937 20.8735 70.9008 21.5901 73.0829 21.5901C75.2314 21.5901 77.0271 20.8626 78.46 19.3968C79.8592 17.9976 80.5531 16.2679 80.5531 14.1852C80.5531 13.8108 80.5422 13.5243 80.5091 13.3258C80.4958 13.2305 80.4697 13.1717 80.4697 13.1717Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24.3333 14.0005L28.001 13.2671L24.2755 12.9194L27.8474 11.8081L24.1076 11.8515L27.5431 10.3704L23.8275 10.808L27.0892 8.97806L23.4398 9.79793L26.4926 7.63516L22.9489 8.83532L25.7587 6.36534L22.3592 7.92655L24.8954 5.17752L21.6791 7.08742L23.915 4.08849L20.9131 6.32189L22.824 3.10563L20.0744 5.6413L21.6361 2.24279L19.1672 5.05257L20.3658 1.50934L18.2026 4.56114L19.0254 0.911736L17.1945 4.17393L17.6292 0.458836L16.1485 3.89388L16.1939 0.153603L15.0801 3.72547L14.7349 0L14.001 3.66917L13.2671 0L12.9208 3.72547L11.8071 0.153603L11.8515 3.89388L10.3713 0.458836L10.8079 4.17393L8.97609 0.911736L9.79793 4.56114L7.63564 1.50934L8.83335 5.05257L6.36485 2.24279L7.92704 5.6413L5.17752 3.10563L7.08693 6.32188L4.087 4.08849L6.32089 7.08742L3.10562 5.17752L5.64079 7.92655L2.2423 6.36534L5.05305 8.83532L1.50837 7.63516L4.56065 9.79793L0.911242 8.97806L4.17343 10.808L0.458841 10.3704L3.89289 11.8515L0.153609 11.8081L3.72399 12.9194L0 13.2671L3.66767 14.0005L0 14.7349L3.72399 15.0797L0.153604 16.1944L3.89289 16.1485L0.458836 17.6287L4.17343 17.194L0.911243 19.0249L4.56065 18.2031L1.50837 20.3648L5.05305 19.1666L2.2423 21.6361L5.64079 20.0739L3.10562 22.824L6.32089 20.9145L4.087 23.9145L7.08693 21.6791L5.17752 24.8959L7.92703 22.3587L6.36484 25.7592L8.83335 22.9489L7.63564 26.4946L9.79793 23.4399L8.97609 27.0888L10.8079 23.8285L10.3713 27.5422L11.8515 24.1081L11.8071 27.8479L12.9208 24.2755L13.267 28L14.001 24.3333L14.7349 28L15.0801 24.2755L16.1939 27.8479L16.1485 24.1081L17.6292 27.5422L17.1945 23.8285L19.0254 27.0888L18.2026 23.4399L20.3658 26.4946L19.1671 22.9489L21.6361 25.7592L20.0744 22.3587L22.824 24.8959L20.9131 21.6791L23.915 23.9145L21.6791 20.9145L24.8954 22.824L22.3592 20.0739L25.7587 21.6361L22.9489 19.1666L26.4926 20.3648L23.4398 18.2031L27.0892 19.0249L23.8275 17.194L27.5431 17.6287L24.1076 16.1485L27.8474 16.1944L24.2755 15.0797L28.001 14.7349L24.3333 14.0005ZM14.0005 21.3398C9.95402 21.3398 6.66171 18.048 6.66171 14.001C6.66171 9.95448 9.95402 6.66266 14.0005 6.66266C18.047 6.66266 21.3388 9.95449 21.3388 14.001C21.3388 18.048 18.047 21.3398 14.0005 21.3398Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+                        </a>
+                        <section class="primary-Header-LA">
+                            <a class="ad-mr-8 ad-rounded-2 ad-px-12 ad-py-8 ad-text-blue-shadeOne active" href="">Disclosures</a>
+                            <a class="ad-mr-8 ad-rounded-2 ad-px-12 ad-py-8 ad-text-blue-shadeOne" href="">Companies</a>
+                            <a class="ad-mr-8 ad-rounded-2 ad-px-12 ad-py-8 ad-text-blue-shadeOne" href="">Companies</a>
+                            <a class="ad-mr-8 ad-rounded-2 ad-px-12 ad-py-8 ad-text-blue-shadeOne" href="">Companies</a>
+                        </section>
+
+                    </li>
+                    <li class="ad-flex ad-items-center">
+                        <label class="ad-text-14 ad-leading-1 ad-block ad-text-gray-shadeTwo applyEllipsis ad-mr-20">TXT PVT LTD</label>
+                        <form id="masterSearch" action="" autocomplete="off" class="ad-relative ad-flex ad-rounded-2 ad-items-center">
+                            <span class="ad-px-12 ad-py-8 ad-cursor-pointer">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.75 17.8687L14.0312 13.125C16.3746 10.2976 16.0822 6.12774 13.3672 3.65505C10.6522 1.18236 6.47324 1.2799 3.87657 3.87657C1.2799 6.47324 1.18236 10.6522 3.65505 13.3672C6.12774 16.0822 10.2976 16.3746 13.125 14.0312L17.8687 18.75L18.75 17.8687ZM3.125 8.75C3.125 5.64339 5.64339 3.125 8.75 3.125C11.8566 3.125 14.375 5.64339 14.375 8.75C14.375 11.8566 11.8566 14.375 8.75 14.375C5.64339 14.375 3.125 11.8566 3.125 8.75Z"
+                                        fill="#fff" />
+                                </svg>
+                            </span>
+                            <input id="masterSearchInput" style="right:0;display:none;padding:10px;width:300px;padding-left:50px;box-shadow: -21px 0px 14px 0px #002a3a;z-index: 1;" class="ad-hidden ic-bgSearch ad-absolute ad-rounded-2 ad-bg-white ad-w-full ad-text-white" type="text"
+                                placeholder="Search for disclosures and companies" />
+                        </form>
+                        <!-- <button class="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.525 15.225L19.5 13.2V9.75C19.495 5.89323 16.585 2.6598 12.75 2.25V0.75H11.25V2.25C7.42834 2.68567 4.5321 5.90371 4.50001 9.75V13.2L2.47501 15.225C2.32687 15.3587 2.24466 15.5505 2.25001 15.75V18C2.2366 18.2027 2.3113 18.4014 2.45497 18.545C2.59863 18.6887 2.79729 18.7634 3.00001 18.75H8.25001C8.25001 20.8211 9.92895 22.5 12 22.5C14.0711 22.5 15.75 20.8211 15.75 18.75H21C21.2027 18.7634 21.4014 18.6887 21.5451 18.545C21.6887 18.4014 21.7634 18.2027 21.75 18V15.75C21.7554 15.5505 21.6732 15.3587 21.525 15.225ZM12 21C10.7574 21 9.75001 19.9926 9.75001 18.75H14.25C14.25 19.9926 13.2427 21 12 21ZM20.25 17.25H3.75001V16.05L5.77501 14.025C5.92316 13.8913 6.00537 13.6995 6.00001 13.5V9.75C6.00001 6.43629 8.68631 3.75 12 3.75C15.3137 3.75 18 6.43629 18 9.75V13.5C17.9947 13.6995 18.0769 13.8913 18.225 14.025L20.25 16.05V17.25Z"
+                                    fill="#B2CAE3" />
+                            </svg>
+                        </button> -->
+                        <button class="ad-mx-32">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C14.7848 1.5 17.4555 2.60625 19.4246 4.57538C21.3938 6.54451 22.5 9.21523 22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12ZM13.125 17.625C13.125 18.2463 12.6213 18.75 12 18.75C11.3787 18.75 10.875 18.2463 10.875 17.625C10.875 17.0037 11.3787 16.5 12 16.5C12.6213 16.5 13.125 17.0037 13.125 17.625ZM12.75 6.00001H11.625C10.7293 5.99801 9.86969 6.35295 9.23632 6.98632C8.60295 7.61969 8.24801 8.47929 8.25001 9.37501V9.75001H9.75001V9.37501C9.75001 8.33947 10.5895 7.50001 11.625 7.50001H12.75C13.7855 7.50001 14.625 8.33947 14.625 9.37501C14.625 10.4105 13.7855 11.25 12.75 11.25H11.25V14.625H12.75V12.75C14.614 12.75 16.125 11.239 16.125 9.37501C16.125 7.51105 14.614 6.00001 12.75 6.00001ZM3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z"
+                                    fill="#B2CAE3" />
+                            </svg>
+                        </button>
+                        <form class="re-menu-master ad-cursor-pointer ad-inline-flex ad-justify-between ad-items-center">
+                            <p style="width: 75px;margin-right: 10px;">
+                                <label for="name" class="ad-text-white ad-leading-1 ad-block ad-mb-4">John Smith</label>
+                                <label for="user" class="ad-text-12 ad-leading-1 ad-block ad-text-gray-shadeTwo">Primary user</label>
+                            </p>
+                            <span class="ad-rounded-full ad-bg-brown-shadeOne ad-text-white ad-text-center" style="height: 32px;width: 32px;line-height: 32px;margin-right: 10px;">JS</span>
+
+                            <svg class="ad-inline" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 6.00005L3.7 5.30005L8 9.60005L12.3 5.30005L13 6.00005L8 11Z" fill="#668088"/>
+                            </svg>
+
+                            <div class="ad-bg-white menuList ad-hidden ad-z-10">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <svg class="ad-inline" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4375 13.9313L13.9156 12.4532L13.3951 10.562L13.6219 10.0203L15.3334 9.05454V6.96429L13.6267 5.99448L13.4037 5.45377L13.9308 3.56156L12.4517 2.08454L10.5603 2.60498L10.0198 2.37837L9.05396 0.666656H6.96371L5.99389 2.37335L5.45331 2.5963L3.5614 2.06853L2.08455 3.54538L2.60507 5.43711L2.37847 5.97755L0.666748 6.94342V9.03307L2.37191 10.005L2.59509 10.5462L2.06806 12.4381L3.54547 13.9155L5.4372 13.395L5.97771 13.6216L6.94359 15.3326H9.03331L10.0046 13.6274L10.5456 13.4043L12.4375 13.9313ZM12.5685 9.08373L11.9873 10.4718L12.4242 12.059L12.0453 12.438L10.4614 11.9967L9.07272 12.5695L8.25831 13.9993H7.72202L6.91435 12.5686L5.52778 11.9872L3.93972 12.4242L3.56143 12.0459L4.00265 10.462L3.42996 9.07341L2.00008 8.25836V7.72201L3.43148 6.91432L4.01288 5.52769L3.57592 3.93963L3.95342 3.56213L5.53725 4.00396L6.92645 3.43102L7.73962 1.99999H8.27536L9.08305 3.43139L10.4697 4.01279L12.0581 3.57574L12.4373 3.95443L11.9962 5.53796L12.569 6.92703L14.0001 7.7402V8.27594L12.5685 9.08373ZM8.00008 10.6667C6.52732 10.6667 5.33342 9.47275 5.33342 7.99999C5.33342 6.52723 6.52732 5.33332 8.00008 5.33332C9.47284 5.33332 10.6667 6.52723 10.6667 7.99999C10.6667 9.47275 9.47284 10.6667 8.00008 10.6667ZM9.33341 7.99999C9.33341 8.73637 8.73646 9.33332 8.00008 9.33332C7.2637 9.33332 6.66675 8.73637 6.66675 7.99999C6.66675 7.26361 7.2637 6.66666 8.00008 6.66666C8.73646 6.66666 9.33341 7.26361 9.33341 7.99999Z" fill="#668088"/>
+                                        </svg> Setting
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg class="ad-inline" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 0.999939C8.01472 0.999939 6 3.01466 6 5.49994C5.99956 5.94223 6.06529 6.3821 6.195 6.80494L1 11.9999V14.9999H4L9.195 9.80494C10.4979 10.2047 11.9118 9.99247 13.0399 9.22776C14.1681 8.46305 14.8888 7.22827 15 5.86994C15.1009 4.80271 14.8075 3.73548 14.175 2.86994C13.3245 1.68902 11.9553 0.992338 10.5 0.999939ZM12 6.99982C12.5523 6.99982 13 6.5521 13 5.99982C13 5.44753 12.5523 4.99982 12 4.99982C11.4477 4.99982 11 5.44753 11 5.99982C11 6.5521 11.4477 6.99982 12 6.99982ZM9.5 8.84994C9.82432 8.94808 10.1612 8.99861 10.5 8.99994C11.6972 9.00089 12.8119 8.38981 13.455 7.37994C13.8439 6.7878 14.0347 6.0875 14 5.37994C13.9649 4.17429 13.3116 3.07165 12.2709 2.46188C11.2302 1.85212 9.94891 1.82115 8.88 2.37994C7.37433 3.19662 6.6609 4.96759 7.18 6.59994L7.325 7.07494L6.9 7.49994L2 12.4149V13.9999H3.585L4.69 12.8949L4 12.2049L4.705 11.4999L5.395 12.1899L6.19 11.3949L5.5 10.7049L6.205 9.99994L6.91 10.6899L8.5 9.09994L8.925 8.67494L9.5 8.84994Z" fill="#668088"/>
+                                        </svg> Change password</a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg class="ad-inline" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 15H9C9.55206 14.9994 9.99945 14.5521 10 14V12.5H9V14H3V2H9V3.5H10V2C9.99945 1.44794 9.55206 1.00055 9 1H3C2.44794 1.00055 2.00055 1.44794 2 2V14C2.00055 14.5521 2.44794 14.9994 3 15ZM10.293 10.293L12.086 8.5H5V7.5H12.086L10.293 5.707L11 5L14 8L11 11L10.293 10.293Z" fill="#668088"/>
+                                        </svg> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </section>
+
+        </header>
+
+        <p style="right: 0px; top: 100px; display: none;z-index: 1;" class="failed-otp ad-hidden ad-bg-red-error ad-fixed ad-text-14 ad-text-white ad-px-12 ad-py-8 ad-rounded-2">
+            <svg class="ad-inline" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1C4.1 1 1 4.1 1 8C1 11.9 4.1 15 8 15C11.9 15 15 11.9 15 8C15 4.1 11.9 1 8 1ZM10.7 11.5L4.5 5.3L5.3 4.5L11.5 10.7L10.7 11.5Z" fill="white"></path>
+                <path opacity="0.01" fill-rule="evenodd" clip-rule="evenodd" d="M10.7 11.5L4.5 5.3L5.3 4.5L11.5 10.7L10.7 11.5Z" fill="white"></path>
+            </svg> &nbsp;
+            <label for="">Failed to send OTP. Please try again later.</label> &nbsp; &nbsp;
+            <button class="close-otp-message">
+                <svg class="ad-inline" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.7L11.3 4L8 7.3L4.7 4L4 4.7L7.3 8L4 11.3L4.7 12L8 8.7L11.3 12L12 11.3L8.7 8L12 4.7Z" fill="white"></path>
+                </svg>
+            </button>
+        </p>
+    </home><section class="ad-py-40">
+    <section class="ad-w-527 ad-mx-auto">
+        <h3 class="ad-text-43 ad-text-blue-shadeTwo ad-mb-12 ad-font-semibold ad-leading-62">Reporting entity</h3>
+        <p class="ad-text-18 ad-text-blue-shadeFive ad-leading-24 ad-mb-32">Please select a reporting entity that you
+            would like to publish disclosure for</p>
+        <div class="ad-mb-40">
+            <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Select reporting
+                entity</label>
+            <div class="dropDownControl status default ad-w-full ad-p-12"
+                data-error-default="Selected valid disclosure type" data-function="showHideReportingEntity(event)"
+                data-value="listed">
+                <p class="ad-flex ad-justify-between ad-items-center">
+                    <label class="selectValue ad-text-blue-header">Select entity</label>
+                    <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088">
+                        </path>
+                    </svg>
+                </p>
+                <div style="width: 100%; display: none;" class="dropdown-list">
+                    <ul>
+                        <li><a data-value="1" href="">Company 1</a></li>
+                        <li><a data-value="2" href="">Company 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="ad-py-4 ad-text-14 ad-mb-20">
+            <button type="submit"
+                class="ad-block ad-font-semibold ad-bg-blue-shadeFour ad-text-white ad-w-full ad-py-8 ad-rounded-2">
+                <label class="ad-leading-24">Continue</label>
+            </button>
+        </p>
+
+
+    </section>
+</section>    <footer class="ad-container">
+        <!-- © 2020 SYNECHRON. ALL RIGHTS RESERVED -->
+    </footer>
+ <script src='main.js'></script></body>
+
+</html>

@@ -1,0 +1,321 @@
+<section class="ad-bg-white ad-border-b-1 ad-border-gray-shadeOne">
+    <section class="ad-container ad-py-24 ad-flex ad-justify-between">
+        <h3 class="ad-text-22 ad-text-blue-header">Issuer Update</h3>
+    </section>
+</section>
+
+<section>
+    <section style="width: 647px; margin: 0 auto;">
+        <section class="ad-text-white ad-bg-blue-shadeSeven ad-py-12 ad-px-24 ad-rounded-2 ad-mt-24">
+            <svg class="ad-inline ad-mr-12" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1C4.1 1 1 4.1 1 8C1 11.9 4.1 15 8 15C11.9 15 15 11.9 15 8C15 4.1 11.9 1 8 1ZM8 3.5C8.4 3.5 8.8 3.8 8.8 4.3C8.8 4.8 8.4 5 8 5C7.6 5 7.2 4.7 7.2 4.2C7.2 3.7 7.6 3.5 8 3.5ZM10 12.1H6V11H7.4V7.6H6.5V6.4H8.6V10.9H10V12.1Z" fill="white"/>
+            </svg> Amended by Michael Smith
+        </section>
+        <form id="issuer-onboarding" method="POST" action="/" autocomplete="off">
+            <div class="re-child-slide-up">
+                <p class="ad-mt-32">
+                    <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Issuer Name</label>
+                    <input id="unique-issuer-name" name="issuer-name" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8" type="text" data-error-default="issuer name" placeholder="Issuer Name" data-validation-type="allowspaces">
+                </p>
+                <section class="ad-pt-12 ad-mb-24">
+
+                </section>
+
+                <section>
+                    <section class="custom-security-block ad-rounded-2 ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-p-16 ad-mb-24">
+                        <div class="ad-flex ad-justify-between">
+                            <label class="ad-text-18 ad-text-blue-header">Security Details</label>
+                            <div>
+                                <span style="background-color:#F2994A; border-radius: 20px;" class="ad-text-white ad-mx-12 ad-text-12 ad-py-4 ad-px-12">Suspended</span>
+                                <p data-handler="jkrbhxfk" class="ad-inline slider-activator-custom">
+                                    <span class="ad-inline-block ad-ml-16"><svg class="ad-inline-block ad-cursor-pointer" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 5L13 10L12.3 10.7L8 6.4L3.7 10.7L3 10L8 5Z" fill="black"></path>
+                                    </svg></span>
+                                </p>
+                            </div>
+                        </div>
+                        <section class="jkrbhxfk section-block ad-flex ad-flex-wrap ad-justify-between ad-pt-24">
+                            <p class="ad-mb-24 ad-w-1/2 ad-pr-16">
+                                <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Security
+                                    Name</label>
+                                <input name="security-name" class="ad-block disableSection ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-4" type="text" data-error-default="Security Name" placeholder="Security Name">
+                                <label>
+                                <span class="ad-text-gray-shadeTwo ad-text-12 ad-pr-4">Previously</span><span class="ad-text-blue-shadeNine ad-font-semibold ad-text-12">Debenture
+                                </span>
+                            </label>
+                            </p>
+                            <p class="ad-mb-24 ad-w-1/2 ad-pl-16">
+                                <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">ISIN Code</label>
+                                <input name="isin-code" class="ad-block ad-uppercase ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-4" type="text" data-validation-type="alphanumeric" data-error-default="ISIN Code" placeholder="ISIN Code">
+                            </p>
+
+                            <div class="ad-mb-24 ad-w-1/2 ad-pr-16">
+                                <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Security
+                                    Type</label>
+                                <div class="dropDownControl onboarding issuer-security-type  ad-w-full ad-p-12 ad-mb-4" data-error-default="Selected valid disclosure type">
+                                    <p class="ad-flex ad-justify-between ad-items-center">
+                                        <label class="selectValue ad-text-blue-header">Select security type</label>
+                                        <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088"></path>
+                                            </svg>
+                                    </p>
+                                    <div style="width: 100%;" class="dropdown-list">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="ad-mb-24 ad-w-1/2 ad-pl-16">
+                                <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">MIC
+                                    Code</label>
+                                <input name="mic-code" class="ad-block ad-uppercase ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-4" type="text" data-validation-type="alphanumeric" data-error-default="MIC Code" placeholder="MIC Code">
+                            </p>
+
+                            <p class="ad-mb-24 ad-w-1/2 ad-pr-16">
+                                <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Ticker</label>
+                                <input name="ticker" class="ad-block ad-uppercase ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-4" type="text" data-error-default="Ticker" placeholder="Ticker">
+                            </p>
+                            <div class="ad-mb-24 ad-w-1/2 ad-pl-16">
+                                <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Status</label>
+                                <div class="dropDownControl status default securityStatus ad-w-full ad-p-12 ad-mb-4" data-error-default="Selected valid disclosure type">
+                                    <p class="ad-flex ad-justify-between ad-items-center">
+                                        <label class="selectValue ad-text-blue-header">Select security status</label>
+                                        <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088"></path>
+                                            </svg>
+                                    </p>
+                                    <div style="width: 100%;" class="dropdown-list">
+                                        <ul>
+                                            <li><a data-value="active" href="">Active</a></li>
+                                            <li><a data-value="listed" href="">Listed</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="ad-mb-24 ad-w-1/2 ad-pr-16">
+                                <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Security Short Code</label>
+                                <input name="ticker" class="ad-block ad-uppercase ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-4" type="text" data-error-default="Short Code" placeholder="Short Code">
+                            </p>
+                        </section>
+                    </section>
+                </section>
+            </div>
+
+            <div class="ad-mb-12">
+                <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Reporting Entity</label>
+                <div class="dropDownControl status default ad-w-full ad-p-12" data-error-default="Selected valid disclosure type" data-function="showHideReportingEntity(event)" data-value="listed">
+                    <p class="ad-flex ad-justify-between ad-items-center">
+                        <label class="selectValue ad-text-blue-header">Select entity</label>
+                        <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088">
+                            </path>
+                        </svg>
+                    </p>
+                    <div style="width: 100%; display: none;" class="dropdown-list">
+                        <ul>
+                            <li><a data-value="1" href="">Company 1</a></li>
+                            <li><a data-value="2" href="">Company 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <section class="ad-pt-32 ad-mb-24">
+                <h3 data-handler="re-child-slide-up" class="slider-activator-custom ad-flex ad-justify-between ad-text-blue-header ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-py-8 ad-leading-20">
+                    <label>History</label>
+                    <span>
+                        <svg class="ad-inline" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.5L19.5 15L18.45 16.05L12 9.6L5.55 16.05L4.5 15L12 7.5Z" fill="black"></path>
+                        </svg>
+    
+                    </span>
+                </h3>
+            </section>
+            <div class="re-child-slide-up">
+                <section class="ad-bg-white ad-p-16" style="height: 260px; overflow: scroll;overflow-x: hidden;">
+                    <ul>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+
+            <p class="ad-text-blue-shadeTwo ad-flex ad-items-center ad-pt-32 ad-mt-8">
+                <input data-field="required" type="checkbox" class="ad-mr-8 ad-inline-block"> I confirm that I want to make changes to this security</p>
+            <section id="additionalReportingEntity">
+
+            </section>
+            <div class="ad-flex ad-justify-between ad-py-32">
+                <p>
+                    <button class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12 ad-mr-16">Cancel</button>
+                    <button type="submit" class="ad-text-green-shadeOne ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-green-shadeOne ad-rounded-2 ad-py-8 ad-px-12 ad-mr-16">Revise</button>
+                </p>
+                <p>
+                    <button class="ad-bg-red-error ad-text-white ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-error ad-rounded-2 ad-py-8 ad-px-12 ad-mr-16">Reject</button>
+                    <button type="submit" class="ad-bg-blue-shadeFour ad-text-white ad-text-12 ad-py-8 ad-px-12 ad-rounded-2">Approve</button>
+                </p>
+            </div>
+        </form>
+    </section>
+</section>
+<!-- Success Message -->
+<section id="succes-message-report" class="ad-hidden">
+    <section class="ad-py-40 ad-px-24 ad-bg-white ad-mb-16 ad-text-center">
+        <h4 class="ad-text-18 ad-font-semibold ad-mb-8 ad-text-blue-header">Issuer Registered</h4>
+        <p class="ad-text-blue-shadeFive ad-mb-20"><label id="success-message-onboarding"></label> has been registered successfully.</p>
+        <a href="/" class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12">Close</a>
+    </section>
+</section>
+
+<section id="disclosureType" class="ad-hidden">
+    <ul>
+        <li><a data-value="Equity" href="">Equity</a></li>
+        <li><a data-value="Debenture" href="">Debenture</a></li>
+        <li><a data-value="Sukuk" href="">Sukuk</a></li>
+    </ul>
+</section>
+
+<ul id="dynamicCompaniesList" class="ad-hidden">
+    <li><a data-value="1" href="">Company 1</a></li>
+    <li><a data-value="2" href="">Compnay 2</a></li>
+    <li><a data-value="3" href="">COmpany 3</a></li>
+</ul>
+
+<script>
+    var payload = {
+        "reportingissuer": {
+            "Title": "Test Reporting issuer",
+            "securityDetails": [{
+                "SecurityName": "",
+                "ISINCode": "",
+                "SecurityTypeID": "",
+                "MICCode": "",
+                "Ticker": ""
+            }]
+        }
+    };
+
+    function validateOnboardingForm(event) {
+        let secutiryDetails = event.target.querySelectorAll('#securityContainer > section');
+        let securityDetail = [];
+        secutiryDetails.forEach((element, index) => {
+            let inputs = element.querySelectorAll("input");
+            let select = element.querySelectorAll(".dropDownControl.onboarding");
+            let status = element.querySelectorAll(".dropDownControl.status");
+            let selectValue = $(select).data('value');
+            let statusValue = $(status).data('value');
+            let details = {
+                SecurityTypeID: selectValue,
+                Status: statusValue
+            }
+            inputs.forEach((elem) => {
+                if (elem.name == "security-name") {
+                    details.SecurityName = elem.value
+                } else if (elem.name == "isin-code") {
+                    details.ISINCode = elem.value;
+                } else if (elem.name == "mic-code") {
+                    details.MICCode = elem.value
+                } else if (elem.name == "ticker") {
+                    details.Ticker = elem.value
+                } else if (elem.name == "coupon-rate") {
+                    details.CouponRate = elem.value
+                } else if (elem.name == "maturity-date") {
+                    details.MaturityDate = elem.value
+                }
+            })
+            securityDetail[index] = details;
+        });
+
+        payload.reportingissuer.securityDetails = securityDetail;
+        let issuerName = document.getElementById("unique-issuer-name").value
+        payload.reportingissuer.Title = issuerName;
+        let selectedEntityID = $("#additionalReportingEntity .dropDownControl.default").data('value')
+
+        console.log(payload.reportingissuer)
+
+        // if api success
+        $("#succes-message-report").removeClass('ad-hidden').addClass('ad-flex')
+        $("#success-message-onboarding").text(issuerName)
+        event.preventDefault()
+    }
+</script>

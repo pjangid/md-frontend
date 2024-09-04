@@ -1,0 +1,496 @@
+<section class=" ad-bg-white">
+    <section class="ad-flex ad-justify-between ad-container">
+        <ul id="stageOfDisclosure" class="ad-flex ad-text-blue-shadeFive ad-border-b-1 ad-border-gray-shadeOne">
+            <li><a href="" data-key="" class="ad-py-24 ad-px-16 ad-inline-block ad-text-blue-header active ad-mr-8">All</a>
+            </li>
+        </ul>
+
+        <section class="ad-inline-flex ad-items-center">
+            <div class="dropDownControl default dashboard ad-relative ad-px-12 ad-py-8">
+                <p class="ad-flex ad-justify-between ad-items-center">
+                    <label class="ad-text-blue-shadeFour ad-font-semibold ad-text-12">Manage</label>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#0051A2" />
+                    </svg>
+                </p>
+                <div style="width: 200px; display: none;" class="dropdown-list">
+                    <ul>
+                        <li><a href="javascript:void(0)" class="customize-dahboard-anchor">Customize dashboard &nbsp;&nbsp;</a></li>
+                        <li><a href="javascript:void(0)" class="show-publish-dialogue">Set publishing rules&nbsp;&nbsp;</a></li>
+                        <li><a href="">Register new reporting entity&nbsp;&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="/" class="ad-bg-blue-shadeFour ad-text-white ad-text-12 ad-py-8 ad-px-12 ad-rounded-2">New
+                disclosure</a>
+        </section>
+    </section>
+</section>
+
+<section>
+    <section class="ad-container">
+        <section class="ad-pt-32 ad-mt-4 ad-mb-24">
+            <div style="width: 180px;" class="dropDownControl dashboardDatePicker ad-relative ad-px-12 ad-py-8">
+                <p class="ad-flex ad-justify-between ad-items-center">
+                    <input autocomplete="off" id="datePickerDashboard" data-error="disabled" placeholder="Date range" class="ad-w-11/12" type="text">
+                    <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088"></path>
+                    </svg>
+                </p>
+                <div style="width: 465px;" class="dropdown-list">
+                    <ul style="width: 200px;">
+                        <li><a data-value="0" href="">Today</a></li>
+                        <li><a data-value="-1" href="">Yesterday</a></li>
+                        <li><a data-value="calculateWeek" href="">This week</a></li>
+                        <li><a href="">Last week</a></li>
+                        <li><a href="">This month</a></li>
+                        <li><a href="">Last month</a></li>
+                        <li><a href="">Custom</a></li>
+                    </ul>
+                    <section class="ad-p-12 ad-bg-white">
+                        <p class="ad-flex ad-justify-end">
+                            <button type="button" class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12 ad-mr-12">Cancel</button>
+                            <button id="hideCalender" type="button" class="ad-bg-blue-shadeFour ad-text-white ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-py-8 ad-px-16 ad-rounded-2">Apply</button>
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <!-- Entity Handling Starts here -->
+            <div style="width: 250px;" class="dropDownControl companyListDasboard default ad-px-12 ad-py-8">
+                <p class="ad-flex ad-justify-between ad-items-center">
+                    <input autocomplete="off" id="companiesListInputDashboard" data-error="disabled" placeholder="Reporting Entity" class="ad-w-11/12" type="text">
+                    <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088"></path>
+                    </svg>
+                </p>
+                <div style="width: 100%;" class="dropdown-list">
+                    <ul id="dashboardCompaniesList" style="max-height: 200px; overflow: scroll; overflow-x:hidden;">
+                        <li style="margin-bottom: 1px;" data-value="1" data-text="Company Legal Name" class="ad-p-12 ad-cursor-pointer ad-text-blue-shadeFour ad-bg-white ad-border-solid applyEllipsis">dashboardCompaniesList dashboardCompaniesList dashboardCompaniesListAarna Capital Limited</li>
+                        <li style="margin-bottom: 1px;" data-value="2" data-text="Company Legal Name" class="ad-p-12 ad-cursor-pointer ad-text-blue-shadeFour ad-bg-white ad-border-solid">Company legal name</li>
+                        <li style="margin-bottom: 1px;" data-value="3" data-text="Company Legal Name" class="ad-p-12 ad-cursor-pointer ad-text-blue-shadeFour ad-bg-white ad-border-solid">Company legal name</li>
+                        <li style="margin-bottom: 1px;" data-value="3" data-text="Company Legal Name" class="ad-p-12 ad-cursor-pointer ad-text-blue-shadeFour ad-bg-white ad-border-solid">Company legal name</li>
+                        <li style="margin-bottom: 1px;" data-value="3" data-text="Company Legal Name" class="ad-p-12 ad-cursor-pointer ad-text-blue-shadeFour ad-bg-white ad-border-solid">Company legal name</li>
+                        <li style="margin-bottom: 1px;" data-value="3" data-text="Company Legal Name" class="ad-p-12 ad-cursor-pointer ad-text-blue-shadeFour ad-bg-white ad-border-solid">Company legal name</li>
+                    </ul>
+                    <p style="margin-top: -1px;" class="ad-flex ad-justify-between ad-bg-white ad-text-12 ad-p-8 ad-pt-16">
+                        <input id="clearDashboardCompany" type="button" value="Clear" class="ad-w-1/2 ad-cursor-pointer ad-bg-gray-shadeTwo ad-text-white ad-px-12 ad-py-8 ad-mr-12">
+                        <input id="applyCompanyListDashboard" type="button" value="Apply" class="ad-w-1/2 ad-cursor-pointer ad-bg-blue-shadeFour ad-text-white ad-px-12 ad-py-8 ad-ml-12">
+                    </p>
+                </div>
+            </div>
+
+            <!-- Entity Handling Ends Here -->
+            <div class="dropDownControl default dashboardDisclosreList ad-px-12 ad-py-8">
+                <p class="ad-flex ad-justify-between ad-items-center">
+                    <label style="width: 145px;" class="applyEllipsis ">Disclosure type</label>
+                    <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088" />
+                    </svg>
+                </p>
+                <div class="dropdown-list">
+                    <ul style="max-height: 200px; overflow: scroll; overflow-x:hidden;">
+                        <li class=""><a data-value="5" href="" class="applyEllipsis ">1 askd fsadf safd saf sdfasdf sadfjl askdfj aksfikf jalkf0</a></li>
+                        <li class=""><a data-value="43" href="">20</a></li>
+                        <li class=""><a data-value="43" href="">30</a></li>
+                        <li class=""><a data-value="43" href="">40</a></li>
+                        <li class=""><a data-value="43" href="">50</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="dropDownControl default dashboardTickerList ad-px-12 ad-py-8">
+                <p class="ad-flex ad-justify-between ad-items-center">
+                    <label style="width: 145px;" class="applyEllipsis ">All tickers</label>
+                    <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088" />
+                    </svg>
+                </p>
+                <div class="dropdown-list">
+                    <ul style="max-height: 200px; overflow: scroll; overflow-x:hidden;">
+                        <li class=""><a data-value="5" href="" class="applyEllipsis ">1sfsadf sadfj kasd hasdhfjsadhf al;sjflkd; djfj0</a></li>
+                        <li class=""><a data-value="43" href="">20</a></li>
+                        <li class=""><a data-value="43" href="">30</a></li>
+                        <li class=""><a data-value="43" href="">40</a></li>
+                        <li class=""><a data-value="43" href="">50</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="ad-inline-block" action="">
+                <div style="width: 276px;" class="ad-inline-block ad-px-12 ad-py-8 ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-bg-white ad-mr-12">
+                    <svg class="ad-inline" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15 14.3L10.7 10C12.6 7.70001 12.3 4.20001 10 2.30001C7.7 0.400014 4.2 0.700014 2.3 3.00001C0.399999 5.30001 0.699999 8.80001 3 10.7C5 12.4 8 12.4 10 10.7L14.3 15L15 14.3ZM2 6.50001C2 4.00001 4 2.00001 6.5 2.00001C9 2.00001 11 4.00001 11 6.50001C11 9.00001 9 11 6.5 11C4 11 2 9.00001 2 6.50001Z"
+                            fill="black" />
+                    </svg>
+                    <input id="dashboardSearchInput" class="ad-bg-transparent  ad-text-blue-shadeTwo ad-w-11/12 ad-pl-12 ad-text-12" type="text" placeholder="Search disclosures and keywords">
+                </div>
+
+                <input id="dashboardSearchButton" class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12" type="button" value="Search">
+            </div>
+        </section>
+    </section>
+</section>
+
+<section>
+    <section class="ad-container">
+        <ul data-list-sequence="issuer,disclosure-type,ticker,submitter,date,status" id="dashboardDocumentRE" class="ad-flex ad-justify-evenly list-master ui-sortable">
+            <li style="width: 35px;" class="ad-flex-grow">
+                <div class="ad-bg-gray-shadeThree ad-text-blue-header ad-text-12 ad-font-semibold ad-text-left ad-py-16 ad-border-l-1 ad-border-b-1 ad-border-t-1 ad-border-gray-shadeOne ad-rounded-2">&nbsp;
+                </div>
+                <div class="fileIconColumn">
+
+                </div>
+            </li>
+        </ul>
+    </section>
+</section>
+
+<section class="ad-container">
+    <footer class="ad-flex ad-items-center ad-py-40 ad-text-12">
+        <section class="ad-text-gray-shadeTwo">
+            <span>Show</span>
+            <div style="min-width: 60px; margin-left: 8px;margin-right: 8px;" class="dropDownControl default ad-px-8 ad-py-4">
+                <p class="ad-flex ad-justify-between ad-items-center">
+                    <label>10</label>
+                    <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088">
+                        </path>
+                    </svg>
+                </p>
+                <div class="dropdown-list">
+                    <ul>
+                        <li class=""><a data-value="5" href="">10</a></li>
+                        <li class=""><a data-value="43" href="">20</a></li>
+                        <li class=""><a data-value="43" href="">30</a></li>
+                        <li class=""><a data-value="43" href="">40</a></li>
+                        <li class=""><a data-value="43" href="">50</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <span>entries</span>
+        </section>
+    </footer>
+</section>
+
+<script>
+    var selectedCompanyDropdown = [];
+    var selectedDateDropdown = "";
+    var selectedDisclosureType = "";
+    var selectedTickerFilter = "";
+    var selectedDisclosureKeywork = "";
+    var selectedPageNo = 1;
+    var selectedDisclosureStatus = ""
+    var listofDocumentsDashborad = [{
+        "ItemID": "{7DE93742-C283-41F2-96AC-74CD7011582B}",
+        "Title": "Test Create Disclosure",
+        "DisclosureType": "Capital of Reporting Entity",
+        "ReportingEntity": "ADCMAltusInvestmentManagementLimited",
+        "SecurityIDs": "{C51D041A-58C9-41DB-9864-AF5C60898CD3}|{3691951E-0754-45B8-AA27-7693ADF9E67C}",
+        "Ticker": "DemoTicker,TESTTicker",
+        "Submitter": "Test Person",
+        "AssignedTo": "",
+        "Status": "Pending Review",
+        "UpdatedDate": "0001-01-01 12:00:00",
+        "MarkAsRead": false
+    }, {
+        "ItemID": "{9745735B-79CB-4ACA-8172-67360039A47E}",
+        "Title": "Test_FSRA_DB_Disclosure",
+        "DisclosureType": "Test_FSRA_DB_DisclosureType",
+        "ReportingEntity": "Test_FSRA_DB_RE",
+        "SecurityIDs": "{4649F1D7-2B54-4C83-8B6A-9727E71F36A2}",
+        "Ticker": "Test_FSRA_DB_Ticker",
+        "Submitter": "Test Person",
+        "AssignedTo": "Test_FSRA",
+        "Status": "Draft",
+        "UpdatedDate": "2020-13-07 03:22:00",
+        "MarkAsRead": true
+    }, {
+        "ItemID": "{24A9488E-50C4-4312-AF97-DC38B9C470CF}",
+        "Title": "Test_FSRA_DB_Disclosure_Multiple",
+        "DisclosureType": "Test_FSRA_DB_DisclosureType",
+        "ReportingEntity": "Test_FSRA_DB_RE,ABCDE",
+        "SecurityIDs": "{4649F1D7-2B54-4C83-8B6A-9727E71F36A2}|{42F729AE-6C82-42DD-9B5F-0B04F7648A68}",
+        "Ticker": "ATicker,Test_FSRA_DB_Ticker",
+        "Submitter": "Test_Submitter",
+        "AssignedTo": "Test_Assign",
+        "Status": "Submit",
+        "UpdatedDate": "2020-16-07 03:40:00",
+        "MarkAsRead": false
+    }, {
+        "ItemID": "{1DF0452E-CCF6-40D0-B010-4E3748564272}",
+        "Title": "Testing 5",
+        "DisclosureType": "Test_FSRA_DB_DisclosureType",
+        "ReportingEntity": "ABCDE",
+        "SecurityIDs": "{42F729AE-6C82-42DD-9B5F-0B04F7648A68}",
+        "Ticker": "ATicker",
+        "Submitter": "Test Person",
+        "AssignedTo": "",
+        "Status": "Published",
+        "UpdatedDate": "2020-15-07 04:24:00",
+        "MarkAsRead": true
+    }, {
+        "ItemID": "{7DE93742-C283-41F2-96AC-74CD7011582B}",
+        "Title": "Test Create Disclosure",
+        "DisclosureType": "Capital of Reporting Entity",
+        "ReportingEntity": "ADCMAltusInvestmentManagementLimited",
+        "SecurityIDs": "{C51D041A-58C9-41DB-9864-AF5C60898CD3}|{3691951E-0754-45B8-AA27-7693ADF9E67C}",
+        "Ticker": "DemoTicker,TESTTicker",
+        "Submitter": "Test Person",
+        "AssignedTo": "",
+        "Status": "Pending Review",
+        "UpdatedDate": "0001-01-01 12:00:00",
+        "MarkAsRead": false
+    }, {
+        "ItemID": "{9745735B-79CB-4ACA-8172-67360039A47E}",
+        "Title": "Test_FSRA_DB_Disclosure",
+        "DisclosureType": "Test_FSRA_DB_DisclosureType",
+        "ReportingEntity": "Test_FSRA_DB_RE",
+        "SecurityIDs": "{4649F1D7-2B54-4C83-8B6A-9727E71F36A2}",
+        "Ticker": "Test_FSRA_DB_Ticker",
+        "Submitter": "Test Person",
+        "AssignedTo": "Test_FSRA",
+        "Status": "Draft",
+        "UpdatedDate": "2020-13-07 03:22:00",
+        "MarkAsRead": true
+    }, {
+        "ItemID": "{24A9488E-50C4-4312-AF97-DC38B9C470CF}",
+        "Title": "Test_FSRA_DB_Disclosure_Multiple",
+        "DisclosureType": "Test_FSRA_DB_DisclosureType",
+        "ReportingEntity": "Test_FSRA_DB_RE,ABCDE",
+        "SecurityIDs": "{4649F1D7-2B54-4C83-8B6A-9727E71F36A2}|{42F729AE-6C82-42DD-9B5F-0B04F7648A68}",
+        "Ticker": "ATicker,Test_FSRA_DB_Ticker",
+        "Submitter": "Test_Submitter",
+        "AssignedTo": "Test_Assign",
+        "Status": "Submit",
+        "UpdatedDate": "2020-16-07 03:40:00",
+        "MarkAsRead": true
+    }, {
+        "ItemID": "{1DF0452E-CCF6-40D0-B010-4E3748564272}",
+        "Title": "Testing 5",
+        "DisclosureType": "Test_FSRA_DB_DisclosureType",
+        "ReportingEntity": "ABCDE",
+        "SecurityIDs": "{42F729AE-6C82-42DD-9B5F-0B04F7648A68}",
+        "Ticker": "ATicker",
+        "Submitter": "Test Person",
+        "AssignedTo": "",
+        "Status": "Published",
+        "UpdatedDate": "2020-15-07 04:24:00",
+        "MarkAsRead": false
+    }, {
+        "ItemID": "{7DE93742-C283-41F2-96AC-74CD7011582B}",
+        "Title": "Test Create Disclosure",
+        "DisclosureType": "Capital of Reporting Entity",
+        "ReportingEntity": "ADCMAltusInvestmentManagementLimited",
+        "SecurityIDs": "{C51D041A-58C9-41DB-9864-AF5C60898CD3}|{3691951E-0754-45B8-AA27-7693ADF9E67C}",
+        "Ticker": "DemoTicker,TESTTicker",
+        "Submitter": "Test Person",
+        "AssignedTo": "",
+        "Status": "Pending Review",
+        "UpdatedDate": "0001-01-01 12:00:00",
+        "MarkAsRead": true
+    }, {
+        "ItemID": "{9745735B-79CB-4ACA-8172-67360039A47E}",
+        "Title": "Test_FSRA_DB_Disclosure",
+        "DisclosureType": "Test_FSRA_DB_DisclosureType",
+        "ReportingEntity": "Test_FSRA_DB_RE",
+        "SecurityIDs": "{4649F1D7-2B54-4C83-8B6A-9727E71F36A2}",
+        "Ticker": "Test_FSRA_DB_Ticker",
+        "Submitter": "Test Person",
+        "AssignedTo": "Test_FSRA",
+        "Status": "Draft",
+        "UpdatedDate": "2020-13-07 03:22:00",
+        "MarkAsRead": true
+    }, {
+        "ItemID": "{24A9488E-50C4-4312-AF97-DC38B9C470CF}",
+        "Title": "Test_FSRA_DB_Disclosure_Multiple",
+        "DisclosureType": "Test_FSRA_DB_DisclosureType",
+        "ReportingEntity": "Test_FSRA_DB_RE,ABCDE",
+        "SecurityIDs": "{4649F1D7-2B54-4C83-8B6A-9727E71F36A2}|{42F729AE-6C82-42DD-9B5F-0B04F7648A68}",
+        "Ticker": "ATicker,Test_FSRA_DB_Ticker",
+        "Submitter": "Test_Submitter",
+        "AssignedTo": "Test_Assign",
+        "Status": "Submit",
+        "UpdatedDate": "2020-16-07 03:40:00",
+        "MarkAsRead": false
+    }, {
+        "ItemID": "{1DF0452E-CCF6-40D0-B010-4E3748564272}",
+        "Title": "Testing 5",
+        "DisclosureType": "Test_FSRA_DB_DisclosureType",
+        "ReportingEntity": "ABCDE",
+        "SecurityIDs": "{42F729AE-6C82-42DD-9B5F-0B04F7648A68}",
+        "Ticker": "ATicker",
+        "Submitter": "Test Person",
+        "AssignedTo": "",
+        "Status": "Published",
+        "UpdatedDate": "2020-15-07 04:24:00",
+        "MarkAsRead": true
+    }];
+    var mockData1={"Disclosures":[{"ItemID":"{8CDD1A5C-C2C4-419F-A8E6-2C71313D00B3}","Title":"Test Publish For Draft","DisclosureType":"Disclosure of Interests","ReportingEntity":"","SecurityIDs":null,"Ticker":"ZINBLE,INSURANCE","Issuer":"Zinble,Aegon Life Insurance Company Limited","Issuers":null,"Submitter":"Pritinanda Champatiray","AssignedTo":"Test  LA","Status":"Published","UpdatedDate":"2021-04-29 15:13:18","MarkAsRead":false,"MediaUrl":"/sitecore/shell/-/media/Market-Disclosure/Test-Publish-For-Draft_29_04_2021_15-09-45.pdf","Link":"/disclosure-details?disclosureid=yhll82AlLS0sQ4wqCTzsoPZXTtyHHPJGMqiV5uGAsNBiyMCSYPS+TQ==","MediaFile":null,"WorkflowHistoriesList":[]},{"ItemID":"{9D580CBB-821E-42DA-BCAF-8406D2D7E540}","Title":"Test Submitter Value","DisclosureType":"Financial Information","ReportingEntity":"","SecurityIDs":null,"Ticker":"ZINBLE,PHARMA","Issuer":"Zinble,Axxelos","Issuers":null,"Submitter":"Pritinanda Champatiray","AssignedTo":"","Status":"Published","UpdatedDate":"2021-04-29 14:22:29","MarkAsRead":true,"MediaUrl":"/sitecore/shell/-/media/Market-Disclosure/Test-Submitter-Value_29_04_2021_14-21-52.pdf","Link":"/disclosure-details?disclosureid=0/ke0X0BOM56tnboau9Da14HNCRKRUOH5CMuFZ6ivmzL3gvMvzLxCA==","MediaFile":null,"WorkflowHistoriesList":[]},{"ItemID":"{FA260E67-6C47-4CAC-89A4-05A136B194F2}","Title":"Test Submitter Value","DisclosureType":"Financial Information","ReportingEntity":"","SecurityIDs":null,"Ticker":"ZINBLE,PHARMA","Issuer":"Zinble,Axxelos","Issuers":null,"Submitter":"Pritinanda Champatiray","AssignedTo":"","Status":"Published","UpdatedDate":"2021-04-29 14:19:49","MarkAsRead":false,"MediaUrl":"/-/media/Market-Disclosure/Test-Submitter-Value_29_04_2021_14-19-00.pdf","Link":"/disclosure-details?disclosureid=WJmr1KzsLo4ByVQeYm7+3uxuRSDz8KQfaxA5IX7CP9TYgZ+a7zoWEQ==","MediaFile":null,"WorkflowHistoriesList":[]},{"ItemID":"{7A28D19D-D00C-45C6-A293-A3D75500866E}","Title":"Test Disclosure Draft In List","DisclosureType":"Business of Reporting Entity","ReportingEntity":"","SecurityIDs":null,"Ticker":"AEGON","Issuer":"Aegon Life Insurance Company Limited","Issuers":null,"Submitter":"Pritinanda Champatiray","AssignedTo":"","Status":"Published","UpdatedDate":"2021-04-29 11:48:41","MarkAsRead":true,"MediaUrl":"/-/media/Market-Disclosure/Test-Disclosure-Draft-In-List_29_04_2021_11-48-32.pdf","Link":"/disclosure-details?disclosureid=3GQSvLg7NwxI9nxjkDF3CgliRoGFVZVQxZck9tuy89GozOX09IE6Gg==","MediaFile":null,"WorkflowHistoriesList":[]},{"ItemID":"{5EB2B210-1243-45AF-87B6-05F0251755F6}","Title":"Test Debugger","DisclosureType":"Admission Information","ReportingEntity":"","SecurityIDs":null,"Ticker":"","Issuer":"Acme Corporation","Issuers":null,"Submitter":"","AssignedTo":"","Status":"Submitted","UpdatedDate":"2021-04-28 22:48:08","MarkAsRead":true,"MediaUrl":"/-/media/Market-Disclosure/Test-Debugger_28_04_2021_22-47-57.pdf","Link":"/disclosure-details?disclosureid=uf1ZyErM1ZKHIb8N8JQSapTCnVTY2J4KaLWBM2nwix9XOenvEy2Hzw==","MediaFile":null,"WorkflowHistoriesList":[]},{"ItemID":"{26432F03-CF13-4B54-8F82-C844775E3076}","Title":"Test Draft Disclosure Edit","DisclosureType":"Admission Information","ReportingEntity":"","SecurityIDs":null,"Ticker":"AEGON","Issuer":"Aegon Life Insurance Company Limited","Issuers":null,"Submitter":"Pritinanda Champatiray","AssignedTo":"","Status":"Published","UpdatedDate":"2021-04-22 13:58:48","MarkAsRead":true,"MediaUrl":"/-/media/Market-Disclosure/Test-Draft-Disclosure-Edit_22_04_2021_13-58-41.pdf","Link":"/disclosure-details?disclosureid=itvK9FzJwmwRh85qVo/Q7T1wwwBXJjeX5snCYfd8szF+NHbXcd6ITg==","MediaFile":null,"WorkflowHistoriesList":[]},{"ItemID":"{0DEBA4EC-7EC7-4D56-95D3-04CC9ED503CC}","Title":"ryfvgyuh","DisclosureType":"Admission Information","ReportingEntity":"","SecurityIDs":null,"Ticker":"COURSES","Issuer":"A Preorder Opportunity","Issuers":null,"Submitter":"","AssignedTo":"","Status":"Published","UpdatedDate":"2021-03-23 16:38:24","MarkAsRead":false,"MediaUrl":"/-/media/Market-Disclosure/ryfvgyuh_23_03_2021_16-38-21.pdf","Link":"/disclosure-details?disclosureid=C3ksKIOznc+60tiX5XsWnjBcD+0As37+LP7zp3fwQlFbR5aAKg/ULw==","MediaFile":null,"WorkflowHistoriesList":[]},{"ItemID":"{B37382A7-308B-424E-AC76-BE077CA5ABEB}","Title":"rtfvtygbh","DisclosureType":"Admission Information","ReportingEntity":"","SecurityIDs":null,"Ticker":"COURSES","Issuer":"A Preorder Opportunity","Issuers":null,"Submitter":"","AssignedTo":"","Status":"Published","UpdatedDate":"2021-03-23 14:30:38","MarkAsRead":false,"MediaUrl":"/-/media/Market-Disclosure/rtfvtygbh_23_03_2021_14-30-31.pdf","Link":"/disclosure-details?disclosureid=/jd6/DLz6cGLRAbzwH8tIcsGXzxKYvDTUffcfqAFD7Bs2O+cM/AS7Q==","MediaFile":null,"WorkflowHistoriesList":[]},{"ItemID":"{E025AFD1-3D2A-4DF3-B4E7-9C973AE0EAF7}","Title":"ytfvyugh","DisclosureType":"Admission Information","ReportingEntity":"","SecurityIDs":null,"Ticker":"COURSES","Issuer":"A Preorder Opportunity","Issuers":null,"Submitter":"","AssignedTo":"","Status":"Published","UpdatedDate":"2021-03-23 14:28:54","MarkAsRead":false,"MediaUrl":"/-/media/Market-Disclosure/ytfvyugh_23_03_2021_14-28-46.pdf","Link":"/disclosure-details?disclosureid=nNyqnA5aXvnf5s7rCC+1MxyG8axStbnzM/w6R8UfYEkc7jCa8wr6TQ==","MediaFile":null,"WorkflowHistoriesList":[]},{"ItemID":"{9FD6F120-524E-4DC2-B7EC-3E056242C4F2}","Title":"Submit Disclosure Draft","DisclosureType":"Capital of Reporting Entity","ReportingEntity":"","SecurityIDs":null,"Ticker":"ZINBLE","Issuer":"Zinble","Issuers":null,"Submitter":"","AssignedTo":"","Status":"Published","UpdatedDate":"2021-03-23 00:43:33","MarkAsRead":false,"MediaUrl":"/-/media/Market-Disclosure/Submit-Disclosure-Draft_23_03_2021_00-43-28.pdf","Link":"/disclosure-details?disclosureid=sTmeoYycvlJwKLy7VyvwTpZM+oNgVUHj7EhPDkPiwPcU2RU+e/yy4A==","MediaFile":null,"WorkflowHistoriesList":[]}],"ReportingEntity":null,"DisclosureType":null,"Tickers":null,"Issuers":null,"IssuersList":null,"TickersList":null,"Status":[{"Key":"{5F815204-A739-47A9-A56D-8D4F3DE912A3}","Value":"Draft","Count":0},{"Key":"{C6FBCDD3-0205-4694-B837-076863BF4C88}","Value":"Not Released","Count":0},{"Key":"{E3A2E8B7-DE81-438F-BC25-63531C611321}","Value":"Submitted","Count":11},{"Key":"{FD9EB03B-5A32-4C4C-86C5-485911F5F445}","Value":"Published","Count":52}],"TotalDisclosure":67,"ColumnStructure":"status,ticker,issuer,disclosure-type,submitter,date","customizeDashboards":[],"ReportingEntitiesForCD":null,"PublishDisclosureCount":52,"CustomizeDashboardName":null}
+    var mockData = {
+        "ColumnStructure": null,
+        "DisclosureType": null,
+        "Disclosures": [{
+            "AssignedTo": "",
+            "Issuer": "Alpha Star Holding III Limited",
+            "DisclosureType": "Admission Information",
+            "Issuers": "Stadeoss",
+            "Issure": null,
+            "ItemID": "{41442119-6DFC-4059-9F43-2548C3EA4CA0}",
+            "Link": "/",
+            "MarkAsRead": false,
+            "MediaUrl": "/Download",
+            "ReportingEntity": "",
+            "SecurityIDs": null,
+            "Status": "Submitted",
+            "Submitter": "",
+            "Ticker": "STADEOSTICKER,ATicker",
+            "Title": "SDsdasdasdasdasdasda",
+            "UpdatedDate": "2020-05-10 12:42:31"
+        }, {
+            "AssignedTo": "",
+            "Issuer": "My Custom Name",
+            "DisclosureType": "Business of Reporting Entity",
+            "Issuers": "Stadeoss,Stadeosss",
+            "Issure": null,
+            "ItemID": "{8E22A2ED-F4AE-454E-8105-6E87FD877F1A}",
+            "Link": "/",
+            "MarkAsRead": true,
+            "MediaUrl": "",
+            "ReportingEntity": "",
+            "SecurityIDs": null,
+            "Status": "Draft",
+            "Submitter": "RAVINDRA  DARJI",
+            "Ticker": "STADEOSTICKER,Test_FSRA_DB_Ticker",
+            "Title": "asdadasda",
+            "UpdatedDate": "2020-04-10 10:50:08",
+        }, {
+            "AssignedTo": "",
+            "Issuer": "My Custom Name",
+            "DisclosureType": "Business of Reporting Entity",
+            "Issuers": "Stadeoss,Stadeosss",
+            "Issure": null,
+            "ItemID": "{8E22A2ED-F4AE-454E-8105-6E87FD877F1A}",
+            "Link": "/",
+            "MarkAsRead": true,
+            "MediaUrl": "",
+            "ReportingEntity": "",
+            "SecurityIDs": null,
+            "Status": "Submitted",
+            "Submitter": "RAVINDRA  DARJI",
+            "Ticker": "STADEOSTICKER,Test_FSRA_DB_Ticker",
+            "Title": "asdadasda",
+            "UpdatedDate": "2020-04-10 10:50:08",
+        }, {
+            "AssignedTo": "",
+            "Issuer": "My Custom Name",
+            "DisclosureType": "Business of Reporting Entity",
+            "Issuers": "Stadeoss,Stadeosss",
+            "Issure": null,
+            "ItemID": "{8E22A2ED-F4AE-454E-8105-6E87FD877F1A}",
+            "Link": "/",
+            "MarkAsRead": true,
+            "MediaUrl": "",
+            "ReportingEntity": "",
+            "SecurityIDs": null,
+            "Status": "Not released",
+            "Submitter": "RAVINDRA  DARJI",
+            "Ticker": "STADEOSTICKER,Test_FSRA_DB_Ticker",
+            "Title": "asdadasda",
+            "UpdatedDate": "2020-04-10 10:50:08",
+        }, {
+            "AssignedTo": "",
+            "Issuer": "My Custom Name",
+            "DisclosureType": "Business of Reporting Entity",
+            "Issuers": "Stadeoss,Stadeosss",
+            "Issure": null,
+            "ItemID": "{8E22A2ED-F4AE-454E-8105-6E87FD877F1A}",
+            "Link": "/",
+            "MarkAsRead": false,
+            "MediaUrl": "",
+            "ReportingEntity": "",
+            "SecurityIDs": null,
+            "Status": "Draft",
+            "Submitter": "RAVINDRA  DARJI",
+            "Ticker": "STADEOSTICKER,Test_FSRA_DB_Ticker",
+            "Title": "asdadasda",
+            "UpdatedDate": "2020-04-10 10:50:08",
+        }, {
+            "AssignedTo": "",
+            "Issuer": "My Custom Name",
+            "DisclosureType": "Business of Reporting Entity",
+            "Issuers": "Stadeoss,Stadeosss",
+            "Issure": null,
+            "ItemID": "{8E22A2ED-F4AE-454E-8105-6E87FD877F1A}",
+            "Link": "/",
+            "MarkAsRead": false,
+            "MediaUrl": "",
+            "ReportingEntity": "",
+            "SecurityIDs": null,
+            "Status": "Published",
+            "Submitter": "RAVINDRA  DARJI",
+            "Ticker": "STADEOSTICKER,Test_FSRA_DB_Ticker",
+            "Title": "asdadasda",
+            "UpdatedDate": "2020-04-10 10:50:08",
+        }],
+        "Issures": null,
+        "ReportingEntitiesForCD": null,
+        "ReportingEntity": null,
+        "Status": [{
+            "Count": 1,
+            "Key": "{E3A2E8B7-DE81-438F-BC25-63531C611321}",
+            "Value": "Submitted",
+        }, {
+            "Count": 3,
+            "Key": "{C6FBCDD3-0205-4694-B837-076863BF4C88}",
+            "Value": "Not Released",
+        }, {
+            "Count": 2,
+            "Key": "{FD9EB03B-5A32-4C4C-86C5-485911F5F445}",
+            "Value": "Published",
+        }, {
+            "Count": 1,
+            "Key": "{5F815204-A739-47A9-A56D-8D4F3DE912A3}",
+            "Value": "Draft",
+        }],
+        "Tickers": null,
+        "TotalDisclosure": 1,
+        "customizeDashboards": []
+    };
+    setTimeout(() => {
+        renderREDashboard(mockData)
+    }, 2000);
+
+    function getPayloadData() {
+        var payload = {
+            "Content": selectedDisclosureKeywork,
+            "ReportingEntity": selectedCompanyDropdown.length ? selectedCompanyDropdown.join(',') : "",
+            "DateRange": selectedDateDropdown,
+            "DisclosureType": selectedDisclosureType,
+            "Ticker": selectedTickerFilter,
+            "Status": selectedDisclosureStatus,
+            "AssignedTo": "",
+            "OrderBy": "",
+            "ShortField": "",
+            "PageNo": selectedPageNo,
+            "ResultsPerPage": 5
+        }
+        return payload;
+    }
+
+    function fetchDocumentsFromServerRE(payload, pageno) {
+        return new Promise((resolve, reject) => {
+            resolve(mockData)
+        })
+
+    }
+
+    function registerNewColumnSequenceREDashboard(sequence) {
+        console.log("New Sequence", sequence)
+    }
+</script>

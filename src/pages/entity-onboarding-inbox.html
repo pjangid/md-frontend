@@ -1,0 +1,439 @@
+<section class="ad-bg-white ad-border-b-1 ad-border-gray-shadeOne">
+    <section class="ad-container ad-py-24 ad-flex ad-justify-between">
+        <h3 class="ad-text-22 ad-text-blue-header">Register Reporting Entity</h3>
+    </section>
+</section>
+
+<section>
+    <section style="width: 647px; margin: 0 auto;" class="ad-relative">
+        <section class="ad-text-white ad-bg-blue-shadeSeven ad-py-12 ad-px-24 ad-rounded-2 ad-mt-24">
+            <svg class="ad-inline ad-mr-12" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1C4.1 1 1 4.1 1 8C1 11.9 4.1 15 8 15C11.9 15 15 11.9 15 8C15 4.1 11.9 1 8 1ZM8 3.5C8.4 3.5 8.8 3.8 8.8 4.3C8.8 4.8 8.4 5 8 5C7.6 5 7.2 4.7 7.2 4.2C7.2 3.7 7.6 3.5 8 3.5ZM10 12.1H6V11H7.4V7.6H6.5V6.4H8.6V10.9H10V12.1Z" fill="white"></path>
+            </svg> Amended by Michael Smith
+        </section>
+        <section class="ad-pt-32 ad-mb-24">
+            <h3 data-handler="re-child-slide-up" class="slider-activator-custom ad-flex ad-justify-between ad-text-blue-header ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-py-8 ad-leading-20">
+                <label>Reporting entity information</label>
+                <span class="">
+                    <svg class="ad-inline" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 7.5L19.5 15L18.45 16.05L12 9.6L5.55 16.05L4.5 15L12 7.5Z" fill="black" />
+                    </svg>
+
+                </span>
+            </h3>
+        </section>
+        <form id="entity-onboarding" method="POST" action="/companyonboarding" autocomplete="off">
+            <div class="re-child-slide-up">
+                <p class="ad-mb-32">
+                    <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Reporting Entity
+                        Name</label>
+                    <input id="unique-entity-name" name="entity-name" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8" type="text" data-error-default="entity name" placeholder="Entity Name" data-validation-type="allowspaces">
+                </p>
+            </div>
+            <section class="ad-mb-16">
+                <h3 class="ad-text-blue-header ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-py-8 ad-leading-20">
+                    Primary user information
+                </h3>
+            </section>
+            <p class="ad-text-blue-shadeFive">There can be a maximum of 2 primary users for a registered reporting entity.
+            </p>
+            <section>
+
+                <section class="ad-flex ad-flex-wrap ad-justify-between ad-pt-24 ad-mb-4">
+                    <p class="ad-mb-24 ad-w-1/2 ad-pr-16">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">First name</label>
+                        <input name="first-name" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-4" type="text" data-error-default="First name" placeholder="First name">
+                    </p>
+                    <p class="ad-mb-24 ad-w-1/2 ad-pl-16">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Last name</label>
+                        <input name="last-name" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-4" type="text" data-error-default="Last name" placeholder="Last name">
+                    </p>
+
+                    <p class="ad-mb-24 ad-w-1/2 ad-pr-16">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Email address</label>
+                        <input name="email-address" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-4" type="email" data-error-default="Email address" placeholder="Email address">
+                    </p>
+
+                    <section class="ad-mb-24 ad-w-1/2 ad-pl-16">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Phone Number</label>
+                        <section class="ad-flex mobileNoContainer ad-mb-4">
+                            <div class="mobileNoControl ad-w-full ad-p-12" data-error-default="Selected valid disclosure type">
+                                <p class="ad-flex ad-justify-between ad-items-center">
+                                    <label class="selectValue ad-text-blue-header">+91</label>
+                                    <svg style="height: 13px; position:relative;right: -4px;" class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088">
+                                                        </path>
+                                                    </svg>
+                                </p>
+                                <div style="width: 100%; display: none;" class="dropdown-list">
+                                    <ul>
+                                        <li><a data-value="+91" href="">+91</a></li>
+                                        <li><a data-value="+821" href="">+821</a></li>
+                                        <li><a data-value="+33" href="">+33</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input name="mboile-no" data-field="not-required" class="mobile-no-field ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header" type="text">
+                        </section>
+
+                    </section>
+
+                    <p class="ad-w-1/2 ad-pr-16">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Employee
+                                                Designation</label>
+                        <input name="designation" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-4" type="text" data-error-default="Employee Designation" placeholder="Employee Designation">
+                    </p>
+                </section>
+            </section>
+            <div id="issuerDropDownContainer" class="ad-pt-32">
+                <div class="ad-mb-24 ad-w-full">
+                    <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Issuer Name</label>
+                    <div class="dropDownControl issuerDropdownElement disclosure ad-w-full ad-p-12" data-error-default="Selected valid disclosure type" data-value="someid3,someid2">
+                        <div class="ad-flex ad-justify-between ad-items-center">
+                            <div style="width: 95%;">
+                                <div>
+                                    <p id="bindChipListIssuer"><label id="someid3" class="selectValue removeSelectedChipIssuer ad-text-blue-header dropdownChipIssuer"><span class="text">Company Name 3</span> <span class="icon"> <svg class="ad-inline ad-relative" style="top:-1px" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.7L11.3 4L8 7.3L4.7 4L4 4.7L7.3 8L4 11.3L4.7 12L8 8.7L11.3 12L12 11.3L8.7 8L12 4.7Z" fill="#0051A2"></path>
+                                              </svg>
+                                              </span></label><label id="someid2" class="selectValue removeSelectedChipIssuer ad-text-blue-header dropdownChipIssuer"><span class="text">Company Name 2</span> <span class="icon"> <svg class="ad-inline ad-relative" style="top:-1px" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.7L11.3 4L8 7.3L4.7 4L4 4.7L7.3 8L4 11.3L4.7 12L8 8.7L11.3 12L12 11.3L8.7 8L12 4.7Z" fill="#0051A2"></path>
+                                              </svg>
+                                              </span></label></p>
+                                </div>
+                            </div>
+                            <p style="width: 5%;text-align: right;">
+                                <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088"></path>
+                                                                            </svg>
+                            </p>
+                        </div>
+                        <div style="width: 100%; display: none;" class="dropdown-list">
+                            <p class="ad-bg-white ad-mt-8 ad-pr-12 ad-py-8 ad-flex">
+                                <span class="ad-px-12 ad-py-8">
+                                                                            <svg class="ad-inline" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 17.8687L14.0312 13.125C16.3746 10.2976 16.0822 6.12774 13.3672 3.65505C10.6522 1.18236 6.47324 1.2799 3.87657 3.87657C1.2799 6.47324 1.18236 10.6522 3.65505 13.3672C6.12774 16.0822 10.2976 16.3746 13.125 14.0312L17.8687 18.75L18.75 17.8687ZM3.125 8.75C3.125 5.64339 5.64339 3.125 8.75 3.125C11.8566 3.125 14.375 5.64339 14.375 8.75C14.375 11.8566 11.8566 14.375 8.75 14.375C5.64339 14.375 3.125 11.8566 3.125 8.75Z" fill="#668088"></path>
+                                                                            </svg>
+                                                                        </span>
+                                <input id="issuerListSearch" data-field="not-required" class="ad-bg-white ad-w-full ad-text-blue-header" type="text" placeholder="Search for Issuers">
+                            </p>
+                            <ul class="multiselectUL" id="issuerListElement" style="
+                                                                    max-height: 250px;
+                                                                    overflow: scroll;
+                                                                    overflow-x: hidden;
+                                                                ">
+                                <li><a data-ticker="GOOGL" data-security="Long Security Name Goes Hehas something" data-security-type="Debentures" data-securitycode="BH000A0KEZD7&#8203;&#8203;&#8203;" data-status="active" data-id="id1" data-value="someid"
+                                        href="">Alpha Star Holding III Limited</a></li>
+                                <li class="active"><a data-ticker="GOOGL" data-security="So Long Security Name Goes Hehas something" data-security-type="Debentures" data-securitycode="BH000A0KEZD7&#8203;&#8203;&#8203;" data-status="listed" data-id="id2" data-value="someid2"
+                                        href="">Company Name 2</a></li>
+                                <li class="active"><a data-ticker="GOOGL" data-security="Nothing Security Name Goes Hehas something" data-security-type="Debentures" data-securitycode="BH000A0KEZD7&#8203;&#8203;&#8203;" data-status="active" data-id="id3" data-value="someid3"
+                                        href="">Company Name 3</a></li>
+                                <li><a data-ticker="GOOGL" data-security="Past Security Name Goes Hehas something" data-security-type="Debentures" data-securitycode="BH000A0KEZD7&#8203;&#8203;&#8203;" data-status="active" data-id="id4" data-value="someid4"
+                                        href="">Company Name 5</a></li>
+                                <li><a data-ticker="GOOGL" data-security="Future Security Name Goes Hehas something" data-security-type="Debentures" data-securitycode="BH000A0KEZD7&#8203;&#8203;&#8203;" data-status="active" data-id="id5" data-value="someid5"
+                                        href="">Alpha Star Holding III Limited Extra Word Added</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div id="issuerGridListView" class="ad-mt-16 ad-hidden" style="display: block;">
+                        <ul class="ad-w-full ad-text-left zebraStrip">
+                            <li class="ad-p-12 ad-text-12 ad-block ad-w-full ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2">
+                                <label style="width: 16%;" class="ad-inline-block ad-px-8"><b>Name</b></label>
+                                <label style="width: 16%;" class="ad-inline-block ad-px-8"><b>Security Name</b></label>
+                                <label style="width: 15%;" class="ad-inline-block ad-px-8"><b>Ticker</b></label>
+                                <label style="width: 15%;" class="ad-inline-block ad-px-8"><b>Security type</b></label>
+                                <label style="width: 19%;" class="ad-inline-block ad-px-8"><b>ISIN Code</b></label>
+                                <label style="width: 15%;" class="ad-inline-block ad-px-8"><b>Status</b></label>
+                            </li>
+
+
+                            <li class="ad-p-12 ad-text-14 ad-block ad-w-full ad-border-solid ad-border-b-1 ad-border-gray-shadeOne">
+                                <label style="width: 16%;" class="ad-inline-block ad-truncate ad-px-8">undefined</label>
+                                <label style="width: 16%;" class="ad-inline-block ad-truncate ad-px-8">Stadeos Security</label>
+                                <label style="width: 15%;" class="ad-inline-block ad-truncate ad-px-8">STADEOSTICKER</label>
+                                <label style="width: 15%;" class="ad-inline-block ad-truncate ad-px-8">Equity</label>
+                                <label style="width: 19%;" class="ad-inline-block ad-truncate ad-px-8">STADEOSISIN</label>
+                                <label style="width: 15%;" class="ad-inline-block ad-truncate ad-px-8 ad-capitalize"> <span class="dotIndicator active"></span> active</label>
+                            </li>
+
+                            <li class="ad-p-12 ad-text-14 ad-block ad-w-full ad-border-solid ad-border-b-1 ad-border-gray-shadeOne">
+                                <label style="width: 16%;" class="ad-inline-block ad-truncate ad-px-8">undefined</label>
+                                <label style="width: 16%;" class="ad-inline-block ad-truncate ad-px-8">Stadeos Security Two</label>
+                                <label style="width: 15%;" class="ad-inline-block ad-truncate ad-px-8">STADEOSTICKER</label>
+                                <label style="width: 15%;" class="ad-inline-block ad-truncate ad-px-8">Debenture</label>
+                                <label style="width: 19%;" class="ad-inline-block ad-truncate ad-px-8">STADEOSISIN</label>
+                                <label style="width: 15%;" class="ad-inline-block ad-truncate ad-px-8 ad-capitalize"> <span class="dotIndicator listed"></span> listed</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <section class="ad-pt-32 ad-mb-24">
+                <h3 data-handler="re-child-slide-up" class="slider-activator-custom ad-flex ad-justify-between ad-text-blue-header ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-py-8 ad-leading-20">
+                    <label>History</label>
+                    <span>
+                        <svg class="ad-inline" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.5L19.5 15L18.45 16.05L12 9.6L5.55 16.05L4.5 15L12 7.5Z" fill="black"></path>
+                        </svg>
+    
+                    </span>
+                </h3>
+            </section>
+            <div class="re-child-slide-up">
+                <section class="ad-bg-white ad-p-16" style="height: 260px; overflow: scroll;overflow-x: hidden;">
+                    <ul>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                        <li class="ad-border-b-1 ad-border-gray-shadeFour ad-mb-12">
+                            <p class="ad-flex ad-justify-between ad-text-12 ad-text-gray-shadeTwo">
+                                <span>Mark Smith</span>
+                                <span>2020-04-19 15:23:18</span>
+                            </p>
+                            <p class="ad-py-8">
+                                Security type and status had to be changed due to etc.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="ad-flex ad-justify-between ad-py-32">
+                <p>
+                    <button class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12 ad-mr-16">Cancel</button>
+                    <button type="submit" class="ad-text-green-shadeOne ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-green-shadeOne ad-rounded-2 ad-py-8 ad-px-12 ad-mr-16">Revise</button>
+                </p>
+                <p>
+                    <button class="ad-bg-red-error ad-text-white ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-error ad-rounded-2 ad-py-8 ad-px-12 ad-mr-16">Reject</button>
+                    <button type="submit" class="ad-bg-blue-shadeFour ad-text-white ad-text-12 ad-py-8 ad-px-12 ad-rounded-2">Approve</button>
+                </p>
+            </div>
+        </form>
+
+        <section id="reportingRevision" style="right: 70px;top: 150px;" class="ad-hidden ad-bg-white ad-rounded-2 ad-fixed">
+            <section class="ad-px-16 ad-py-12 ad-relative">
+                <label class="ad-text-black ad-block ad-mb-12">Revision reasons</label>
+                <ul style="list-style: disc;" class="ad-text-blue-shadeFour ad-text-12 ad-pl-12">
+                    <li class="ad-mb-4">Incorrect Reporting Entity</li>
+                    <li class="ad-mb-4">Incorrect Document</li>
+                    <li class="ad-mb-4">Incorrect Title</li>
+                </ul>
+            </section>
+        </section>
+    </section>
+</section>
+<section id="succes-message-report" class="ad-hidden">
+    <section class="ad-py-40 ad-px-24 ad-bg-white ad-mb-16 ad-text-center">
+        <h4 class="ad-text-18 ad-font-semibold ad-mb-8 ad-text-blue-header">Reporting Entity Registered</h4>
+        <p class="ad-text-blue-shadeFive ad-mb-20"><label id="success-message-onboarding"></label> has been registered successfully. A login link has been shared with the registered emal ID of the primary user(s).</p>
+        <a href="/" class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12">Close</a>
+    </section>
+</section>
+
+<section id="disclosureType" class="ad-hidden">
+    <ul>
+        <li><a data-value="14" href="">Option</a></li>
+        <li><a data-value="2" href="">Option</a></li>
+        <li><a data-value="3" href="">Option</a></li>
+        <li><a data-value="4" href="">Option</a></li>
+        <li><a data-value="5" href="">Option</a></li>
+        <li><a data-value="6" href="">Option</a></li>
+        <li><a data-value="7" href="">Option</a></li>
+    </ul>
+</section>
+
+
+<!-- <ul id="issuerListData" class="ad-hidden">
+    <li>
+        <a data-value="data1" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Some Data</span></a>
+    </li>
+    <li>
+        <a data-value="data2" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Some Data 2</span></a>
+    </li>
+    <li>
+        <a data-value="date3" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Some Data 3</span></a>
+    </li>
+    <li>
+        <a data-value="c5kned2a5b7+6dsmfjt/OCOfnnOa/n9g/PV2gxvzEtvrCs58bjca8A==" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Stadeos ds</span></a>
+    </li>
+    <li>
+        <a data-value="c5kned2a5b7+6dsmfjt/OCOfnnOa/n9g/PsddsfV2gxvzEtvrCs58bjca8A==" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Stadeos</span></a>
+    </li>
+</ul> -->
+
+<script>
+    // This carries the data-value for selected list
+    var selectedIssuerList = [];
+    //   This carries the data-id for selected list
+    var selectedIssuerIDList = []
+
+
+    var payload = {
+        "reportingEntity": {
+            "Title": "",
+            "userRegisterInformation": [{
+                "FirstName": "",
+                "LastName": "",
+                "Email": "",
+                "PhoneNumber": "",
+                "JobTitle": ""
+            }]
+        }
+    };
+
+    function validateREOnboardingForm(event) {
+        debugger
+        let userDetails = event.target.querySelectorAll('#primaryUser > section');
+        let userList = [];
+        userDetails.forEach((element, index) => {
+            let inputs = element.querySelectorAll("input");
+            let details = {}
+            inputs.forEach((elem) => {
+                if (elem.name == "first-name") {
+                    details.FirstName = elem.value
+                } else if (elem.name == "last-name") {
+                    details.LastName = elem.value;
+                } else if (elem.name == "email-address") {
+                    details.Email = elem.value
+                } else if (elem.name == "phone") {
+                    details.PhoneNumber = elem.value
+                } else if (elem.name == "designation") {
+                    details.JobTitle = elem.value
+                }
+            })
+            userList[index] = details;
+        });
+
+        payload.reportingEntity.userRegisterInformation = userList;
+        let entityName = document.getElementById("unique-entity-name").value
+        payload.reportingEntity.Title = entityName;
+
+        console.log(payload.reportingEntity)
+
+        // if api success
+        $("#succes-message-report").removeClass('ad-hidden').addClass('ad-flex')
+        $("#success-message-onboarding").text(entityName)
+        event.preventDefault()
+    }
+
+    function getSecurityList(issuerListArray) {
+        return new Promise((resolve, reject) => {
+            let data = [{
+                "item": null,
+                "SecurityId": "{5000FAEB-4183-4B7B-977F-EDAF996544D8}",
+                "SecurityName": "Stadeos Security",
+                "MICCode": "STADEOSMIC",
+                "Ticker": "STADEOSTICKER",
+                "SecurityType": "Equity",
+                "SecurityTypeID": "{99DD2F97-7CDE-4BA4-8D4A-481AC02A4A59}",
+                "ReportingEntityName": null,
+                "ReportingEntityId": null,
+                "IssuerId": null,
+                "IsActive": false,
+                "ISINCode": "STADEOSISIN",
+                "Status": "active",
+                "StatusID": "{61969D43-075F-45FE-9C31-826A7F4AEA4D}",
+                "Couponrate": "",
+                "MaturityDate": "20200902T183000Z",
+                "IssuerName": "test"
+            }, {
+                "item": null,
+                "SecurityId": "{5F7DCC7A-C5E9-48F7-A94E-E66F6631DCB7}",
+                "SecurityName": "Stadeos Security Two",
+                "MICCode": "STADEOSMIC",
+                "Ticker": "STADEOSTICKER",
+                "SecurityType": "Debenture",
+                "SecurityTypeID": "{907434B5-FC80-47D9-A5C5-021A301ED844}",
+                "ReportingEntityName": null,
+                "ReportingEntityId": null,
+                "IssuerId": null,
+                "IsActive": false,
+                "ISINCode": "STADEOSISIN",
+                "Status": "listed",
+                "StatusID": "{FED7CC22-5CC5-4F74-9DC8-B843BC7F493C}",
+                "Couponrate": "STADEOS",
+                "MaturityDate": "20200929T183000Z",
+                "IssuerName": "test2"
+            }]
+
+            resolve(data)
+
+        })
+    }
+</script>

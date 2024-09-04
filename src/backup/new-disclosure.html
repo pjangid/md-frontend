@@ -1,0 +1,193 @@
+<form action="/newdisclosure" method="POST" data-function="myCustomFunction(event)">
+    <section class="ad-bg-white ad-border-b-1 ad-border-gray-shadeOne">
+        <section class="ad-container ad-py-16 ad-flex ad-justify-between">
+            <button
+                class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12">Cancel</button>
+            <button type="submit"
+                class="ad-bg-blue-shadeFour ad-text-white ad-text-12 ad-py-8 ad-px-12 ad-rounded-2">Submit</button>
+        </section>
+    </section>
+
+    <section>
+        <section style="width: 647px; margin: 0 auto;" class="ad-py-40">
+            <section class="ad-pt-24">
+                <h3
+                    class="ad-text-blue-header ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-py-8 ad-leading-20">
+                    Publish As
+                </h3>
+            </section>
+            <section>
+                <div class="ad-text-blue-header ad-mb-40">
+                    <div id="radioPublishASLA" class="radio ad-flex ad-items-center ad-py-12">
+                        <input id="radioLA" name="radio" type="radio" checked>
+                        <label for="radioLA" class="radio-label"></label>
+                        <div style="line-height: 1.3;" class="ad-flex ad-items-center">
+                            <label style="height: 32px;width:32px;" class="ad-bg-gray-shadeTwo ad-ml-16 ad-mr-8 ad-font-12 ad-flex ad-justify-center ad-items-center ad-text-white ad-rounded-4">LA</label>
+                            <p>
+                                <label class="ad-text-blue-header ad-font-semibold  ad-block">Listing Authority</label>
+                                <label class="ad-text-gray-shadeTwo ad-text-12  ad-block">Publish disclosure without reporting entity information</label>
+                            </p>
+                           
+                        </div> 
+                    </div>
+        
+                    <div  id="radioPublishASRE" class="radio ad-flex ad-items-center ad-pb-12 ad-pt-4">
+                        <input id="radioRE" name="radio" type="radio">
+                        <label for="radioRE" class="radio-label"></label>
+                        <div style="line-height: 1.3;" class="ad-flex ad-items-center">
+                            <label style="height: 32px;width:32px;" class="ad-bg-brown-shadeOne ad-ml-16 ad-mr-8 ad-font-12 ad-flex ad-justify-center ad-items-center ad-text-white ad-rounded-4">RE</label>
+                            <p>
+                                <label class="ad-text-blue-header ad-font-semibold  ad-block">Reporting Entity / Issuer</label>
+                                <label class="ad-text-gray-shadeTwo ad-text-12  ad-block">Publish disclosure as a reporting entity</label>
+                            </p>
+                           
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <section id="publishedASRE" class="ad-block">
+                
+            </section>
+            <section class="">
+                <h3 data-handler="izqjypkhoc"
+                    class="slider-activator-custom ad-mt-16 ad-text-blue-header ad-flex ad-justify-between ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-pb-8 ad-leading-20">
+                   <label>Disclosure</label> 
+                    <span class="">
+                        <svg class="ad-inline" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.5L19.5 15L18.45 16.05L12 9.6L5.55 16.05L4.5 15L12 7.5Z" fill="black"></path>
+                        </svg>
+    
+                    </span>
+                </h3>
+
+                <section class="izqjypkhoc ad-pt-24">
+                    <p class="ad-pb-24">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Title</label>
+                        <input id="new-document-title" name="document-title"
+                            class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8"
+                            type="text" data-error-default="document title" placeholder="Document Title">
+                    </p>
+                    <div class="ad-pb-24">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Disclosure
+                            Type</label>
+                        <div class="dropDownControl default ad-w-1/2 ad-p-12"
+                            data-error-default="Selected valid disclosure type">
+                            <p class="ad-flex ad-justify-between ad-items-center">
+                                <label class="selectValue ad-text-blue-header">Disclosure type</label>
+                                <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z"
+                                        fill="#668088"></path>
+                                </svg>
+                            </p>
+                            <div style="width: 100%;" class="dropdown-list">
+                                <ul>
+                                    <li><a data-value="1" href="">Option</a></li>
+                                    <li><a data-value="2" href="">Option</a></li>
+                                    <li><a data-value="3" href="">Option</a></li>
+                                    <li><a data-value="4" href="">Option</a></li>
+                                    <li><a data-value="5" href="">Option</a></li>
+                                    <li><a data-value="6" href="">Option</a></li>
+                                    <li><a data-value="7" href="">Option</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <section class="ad-pb-24">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Breif Summary</label>
+                        <textarea style="resize: none;"
+                            class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8"
+                            type="text" data-error-default="breif summary" placeholder="Breif Summary"> </textarea>
+                    </section>
+    
+                    <section id="document-drop" class="ad-py-22 ad-text-center ad-rounded-2 ad-bg-blue-shadeEight" ondrop="disclosureDropHandler(event);" ondragover="disclosureDragOverHandler(event);">
+                        <p class="ad-text-center ad-pb-8">
+                            <img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADxSURBVHgB7ZXdDYIwFIVPiwM4gs8+OYITGGUAhUmoE+gGiAMobuAWvroIVirRNIDQP2OM/V4gl+aej7TpBf4d0qjM0wgk2JRvQ7jlCs4Z8lUmF2ljGQmSD4QLRiBkWy8OWhcKjksClyz2HC0/RvFlflwgzBjClMEC830W4ZwkVZdijUPMYEAAE+TwB3SK8YzgcjpDE32BRridhN4ZkMM5j151XsTVs7xDNM+EukA9XL7R8nhnKqEm0BVuKdEvoBJuIUGdhRtKUKfhBhLvBW6UG4W3STx7aTNPJ53fxYSrppx5DytUBHrw49gLeAEv4AU8d/AthznKHgPxAAAAAElFTkSuQmCC"
+                                alt="">
+                        </p>
+                        <h3 class="ad-text-blue-shadeNine ad-font-bold">Drag and drop a disclosure document up to 40MB</h3>
+                        <section class="ad-text-blue-shadeNine">
+                                <input id="original-file-button" class="ad-hidden" type="file" name="myfile" accept=".pdf" />
+                                or 
+                                <button 
+                                class="ad-text-blue-shadeFour ad-underline"
+                                type="button" 
+                                id="new-file-document">
+                                browse
+                            </button> 
+                            to choose a PDF file
+                        </section>
+                    </section>
+                    <section class="ad-flex ad-justify-between ad-p-16 ad-border-solid ad-border-1 ad-border-gray-shadeFour ad-rounded-2">
+                        <label class="ad-text-blue-shadeFour">Disclosure_Disclosure_File_Name.pdf</label>
+                        <button class="ad-text-red-error">Remove</button>
+                    </section>
+                    <p class="ad-text-blue-shadeTwo ad-flex ad-items-center ad-pt-40 ad-mt-16">
+                        <input data-field="not-required" type="checkbox" class="ad-mr-8 ad-inline-block">This dislcosure is
+                        price sensitive</p>
+                    <p class="ad-text-blue-shadeTwo ad-flex ad-items-center ad-pt-8 ad-mt-8">
+                        <input data-field="required" type="checkbox" class="ad-mr-8 ad-inline-block"> I confirm that I want
+                        to upload this disclosure onto the ADGM Disclosure Platform</p>
+                </section>
+            </section>
+            
+        </section>
+    </section>
+</form>
+
+<ul id="companiesListData" class="ad-hidden">
+    <li data-name="name1" data-id="12" style="margin-bottom: 1px;" class="ad-p-12 ad-text-blue-shadeFour ad-bg-white ad-border-solid">a</li>
+    <li data-name="name2" data-id="34" style="margin-bottom: 1px;" class="ad-p-12 ad-text-blue-shadeFour ad-bg-white ad-border-solid">a</li>
+    <li data-name="name3" data-id="56" style="margin-bottom: 1px;" class="ad-p-12 ad-text-blue-shadeFour ad-bg-white ad-border-solid">b</li>
+    <li data-name="name4" data-id="78" style="margin-bottom: 1px;" class="ad-p-12 ad-text-blue-shadeFour ad-bg-white ad-border-solid">c</li>
+</ul>
+<ul id="securityListData" class="ad-hidden">
+    <li><a data-value="all" href="">Select All</a></li>
+    <li><a data-id="id1" data-value="URJS74638" href="">URJS74638</a></li>
+    <li><a data-id="id2" data-value="FHEYGHD6353" href="">FHEYGHD6353</a></li>
+    <li><a data-id="id3" data-value="3YH2G7FHS" href="">3YH2G7FHS</a></li>
+</ul>
+<script>
+    var securityCodeList=[];
+    var securityCodeListID=[]
+    function disclosureDropHandler(ev) {
+        ev.preventDefault();
+        if (ev.dataTransfer.items) {
+            if (ev.dataTransfer.items.length > 1) {
+                alert("Only one pdf file can be uploaded")
+            } else {
+                let file = ev.dataTransfer.items[0].getAsFile();
+                if (file.type !== "application/pdf") {
+                    alert("Only pdf files accepted")
+                } else if (file.type == "application/pdf") {
+                    alert("success")
+                }
+            }
+        } else {
+        //    Any other error
+        }
+    }
+
+    function disclosureDragOverHandler(ev) {
+        ev.preventDefault();
+    }
+
+    function fetchCompanyData(e,companyName){
+        console.log(companyName)
+        $("#companiesListInput").val(companyName)
+        // Api call
+    }
+
+    function setSecurityData(param){
+        $("#disclosure-security-code").val(param.securityCode)
+        $("#disclosure-security-type").val(param.securityType)
+        $("#disclosure-mic-code").val(param.micCode)
+        $("#disclosure-ticker").val(param.ticker)
+    }
+
+    function myCustomFunction(event){
+        event.preventDefault()
+    }
+</script>

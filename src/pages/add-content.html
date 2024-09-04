@@ -1,0 +1,203 @@
+<form action="/newdisclosure" method="POST">
+    <section class="ad-bg-white ad-border-b-1 ad-border-gray-shadeOne">
+        <section class="ad-container ad-py-16 ad-flex ad-justify-between">
+            <button class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12">Cancel</button>
+            <button type="submit" class="ad-bg-blue-shadeFour ad-text-white ad-text-12 ad-py-8 ad-px-12 ad-rounded-2">Submit</button>
+        </section>
+    </section>
+
+    <section>
+        <section style="width: 647px; margin: 0 auto;" class="ad-py-40">
+            <section class="ad-pt-24">
+                <h3 class="ad-text-blue-header ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-py-8 ad-leading-20">
+                    Category
+                </h3>
+            </section>
+            <section>
+                <div class="ad-text-blue-header ad-mb-40">
+                    <div id="radioPublishExternal" class="radio ad-flex ad-items-center ad-py-12">
+                        <input id="radioExternal" name="radio" type="radio" checked>
+                        <label for="radioExternal" class="radio-label"></label>
+                        <div style="line-height: 1.3;" class="ad-flex ad-items-center">
+                            <label style="height: 32px;width:32px;" class="ad-bg-gray-shadeTwo ad-ml-16 ad-mr-8 ad-font-12 ad-flex ad-justify-center ad-items-center ad-text-white ad-rounded-4">LA</label>
+                            <p>
+                                <label class="ad-text-blue-header ad-font-semibold  ad-block">External</label>
+                                <label class="ad-text-gray-shadeTwo ad-text-12  ad-block">Publish the resource for reporting entities and listing authorities</label>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div id="radioPublishInternal" class="radio ad-flex ad-items-center ad-pb-12 ad-pt-4">
+                        <input id="radioInternal" name="radio" type="radio">
+                        <label for="radioInternal" class="radio-label"></label>
+                        <div style="line-height: 1.3;" class="ad-flex ad-items-center">
+                            <label style="height: 32px;width:32px;" class="ad-bg-brown-shadeOne ad-ml-16 ad-mr-8 ad-font-12 ad-flex ad-justify-center ad-items-center ad-text-white ad-rounded-4">RE</label>
+                            <p>
+                                <label class="ad-text-blue-header ad-font-semibold  ad-block">Internal</label>
+                                <label class="ad-text-gray-shadeTwo ad-text-12  ad-block">Publish the resource for listing authorities Only</label>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="publishedASRE" class="ad-block">
+
+            </section>
+            <section class="">
+                <h3 data-handler="" class="slider-activator-custom ad-mt-16 ad-text-blue-header ad-flex ad-justify-between ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-pb-8 ad-leading-20">
+                    <label>Add resource</label>
+                </h3>
+
+                <section class="ad-pt-24">
+                    <p class="ad-pb-24">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Title</label>
+                        <input id="new-document-title" name="document-title" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8" type="text" data-error-default="document title" placeholder="Document Title">
+                    </p>
+                    <div class="ad-pb-24">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Category</label>
+                        <div class="dropDownControl default ad-w-full ad-p-12" data-error-default="Selected valid disclosure type">
+                            <p class="ad-flex ad-justify-between ad-items-center">
+                                <label class="selectValue ad-text-blue-header">Select a category</label>
+                                <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z"
+                                        fill="#668088"></path>
+                                </svg>
+                            </p>
+                            <div style="width: 100%;" class="dropdown-list">
+                                <ul>
+                                    <li><a data-value="1" href="">Option</a></li>
+                                    <li><a data-value="2" href="">Option</a></li>
+                                    <li><a data-value="3" href="">Option</a></li>
+                                    <li><a data-value="4" href="">Option</a></li>
+                                    <li><a data-value="5" href="">Option</a></li>
+                                    <li><a data-value="6" href="">Option</a></li>
+                                    <li><a data-value="7" href="">Option</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="ad-pb-24">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Content</label>
+                        <div style="min-height: 181px; max-height: 400px; overflow: scroll; overflow-x: hidden;" id="my-custom-content-editor" class="pell ad-bg-white ad-p-16 ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2">
+
+                        </div>
+                    </section>
+
+                    <h2 class="ad-text-18 ad-mb-16 ad-border-b-1 ad-border-gray-shadeOne">Attach files</h2>
+
+                    <section id="document-drop" class="ad-py-22 ad-text-center ad-rounded-2 ad-bg-blue-shadeEight" ondrop="disclosureDropHandler(event);" ondragover="disclosureDragOverHandler(event);">
+                        <p class="ad-text-center ad-pb-8">
+                            <img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADxSURBVHgB7ZXdDYIwFIVPiwM4gs8+OYITGGUAhUmoE+gGiAMobuAWvroIVirRNIDQP2OM/V4gl+aej7TpBf4d0qjM0wgk2JRvQ7jlCs4Z8lUmF2ljGQmSD4QLRiBkWy8OWhcKjksClyz2HC0/RvFlflwgzBjClMEC830W4ZwkVZdijUPMYEAAE+TwB3SK8YzgcjpDE32BRridhN4ZkMM5j151XsTVs7xDNM+EukA9XL7R8nhnKqEm0BVuKdEvoBJuIUGdhRtKUKfhBhLvBW6UG4W3STx7aTNPJ53fxYSrppx5DytUBHrw49gLeAEv4AU8d/AthznKHgPxAAAAAElFTkSuQmCC"
+                                alt="">
+                        </p>
+                        <h3 class="ad-text-blue-shadeNine ad-font-bold">My Custom Message Here</h3>
+                        <section class="ad-text-blue-shadeNine">
+                            <input id="original-file-button" class="ad-hidden fileOption" type="file" name="myfile" accept=".jpeg,.jpg,.bmp,.png,.mp4,.wmv,.mkv,.pdf,.doc,.docx,.ppt" multiple> or
+                            <button class="ad-text-blue-shadeFour ad-underline" type="button" id="new-file-document">
+                                browse
+                            </button> to choose a PDF file
+                        </section>
+                    </section>
+                    <section class="uploadingFiles">
+                        <section class="ad-flex ad-mt-16 ad-mb-16 ad-justify-between ad-p-16 ad-border-solid ad-border-1 ad-border-gray-shadeFour ad-rounded-2">
+                            <label class="ad-text-blue-shadeFour">Disclosure_Disclosure_File_Name.pdf</label>
+                            <button data-name="thumbnail_IMG_2389.jpg" type="button" class="create-content-remove-file ad-text-red-error">Remove</button>
+                        </section>
+                        <section class="ad-flex ad-mt-16 ad-mb-16 ad-justify-between ad-p-16 ad-border-solid ad-border-1 ad-border-gray-shadeFour ad-rounded-2">
+                            <label class="ad-text-blue-shadeFour">Disclosure_Disclosure_File_Name.pdf</label>
+                            <button type="button" class="create-content-remove-file ad-text-red-error">Remove</button>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+        </section>
+    </section>
+</form>
+<script>
+    var correctFiles = []
+    $(document).on("click",".create-content-remove-file",function(){
+        let attribute = $(this).attr("data-name");
+        correctFiles.forEach((element,index) => {
+            if(element.name == attribute ){
+                correctFiles.splice(index,1);
+                $(this).parent().remove()
+            }
+        });
+    });
+
+    function validateMyFile(file) {
+        return new Promise((resolve, reject) => {
+            if (file.type == "image/png" || file.type == "image/jpg" || file.type == "image/jpeg") {
+                let img = new Image()
+                img.src = window.URL.createObjectURL(file)
+                img.onload = () => {
+                    console.log(img.width, img.height)
+                    if (img.width >= 3001 && img.height >= 30001) {
+                        alert("Incorrect size");
+                        reject()
+                    } else {
+                        alert("Correct size image");
+                        resolve()
+                    }
+                }
+            } else if (file.type == "video/mp4") {
+                if (file.size / 1024 / 1024 > 400) {
+                    alert("exceeds minimum file size")
+                    reject()
+                } else {
+                    resolve()
+                    alert("correct Video")
+                }
+            } else if (file.type == "application/pdf") {
+
+            } else {
+                reject()
+                alert("invalid file")
+            }
+        })
+    }
+
+    function uploadToServer(file) {
+        correctFiles.push(file)
+        console.log("uploading to server/Whatever")
+    }
+    $(document).ready(function() {
+        $(".fileOption").change(function(e) {
+            for (let index = 0; index < e.target.files.length; index++) {
+                const file = e.target.files[index];
+                console.log("file",file)
+                validateMyFile(file).then(() => {
+                    uploadToServer(file)
+                }).catch((error) => {
+                    debugger
+                    console.log("Something Went Wrong With Files")
+                })
+            }
+        });
+    })
+
+    function disclosureDropHandler(ev) {
+        ev.preventDefault();
+        if (ev.dataTransfer.items) {
+            for (let index = 0; index < ev.dataTransfer.items.length; index++) {
+                const file = ev.dataTransfer.items[index].getAsFile();
+                validateMyFile(file).then(() => {
+                    uploadToServer()
+                }).catch((error) => {
+                    console.log("Something Went Wrong With Drops")
+                })
+            }
+        } else {
+            //    Any other error
+        }
+    }
+
+    function disclosureDragOverHandler(ev) {
+        ev.preventDefault();
+    }
+</script>

@@ -1,0 +1,85 @@
+<section id="new-user-dialogue" style="display: none;">
+    <section class="custom-dialogue ad-flex">
+        <section style="width: 810px; height: 640px;" class="ad-bg-white ad-relative ad-px-40">
+            <button class="close-user-dialogue close-dialogue-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18 7.05L16.95 6L12 10.95L7.05 6L6 7.05L10.95 12L6 16.95L7.05 18L12 13.05L16.95 18L18 16.95L13.05 12L18 7.05Z"
+                        fill="#668088" />
+                </svg>
+            </button>
+
+            <header class="ad-pt-32 ad-pb-24">
+                <h3 class="ad-text-22 ad-text-blue-header ad-font-semibold">Add New User</h3>
+            </header>
+
+            <section>
+                <section class="ad-pb-8">
+                    <h3
+                        class="ad-flex ad-justify-between ad-text-blue-header ad-text-18 ad-font-bold ad-py-8 ad-leading-20">
+                        <label>Access Type</label>
+                    </h3>
+                    <div class="ad-text-blue-header ad-flex">
+                        <div class="radio">
+                            <input id="newUserPrimary" name="radio" type="radio">
+                            <label for="newUserPrimary" class="radio-label">Primary user</label>
+                        </div>
+
+                        <div class="radio">
+                            <input id="newUserSecondary" name="radio" type="radio">
+                            <label for="newUserSecondary" class="radio-label">Secondary user</label>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <h3 class="ad-flex ad-justify-between ad-font-semibold ad-text-blue-header ad-text-18 ad-py-8 ad-leading-20">
+                    <label>Employee Information</label>
+                </h3>
+                <section class="ad-flex ad-flex-wrap ad-justify-between ad-pt-12 ad-mb-8">
+                    <p class="ad-mb-12 ad-w-1/2 ad-pr-16">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">First name</label>
+                        <input value="Abhishek" name="first-name" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8" type="text" data-error-default="First name" placeholder="First name">
+                    </p>
+                    <p class="ad-mb-12 ad-w-1/2 ad-pl-16">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Last name</label>
+                        <input value="Sharma" name="last-name" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8" type="text" data-error-default="Last name" placeholder="Last name">
+                    </p>
+
+                    <p class="ad-mb-12 ad-w-1/2 ad-pr-16">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Email address</label>
+                        <input value="abhishek@synechron.com" name="email-address" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8" type="email" data-error-default="Email address" placeholder="Email address">
+                    </p>
+
+                    <p class="ad-mb-12 ad-w-1/2 ad-pl-16">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Phone number</label>
+                        <input value="1254857844" name="phone" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8" type="number" data-error-default="Phone number" placeholder="Phone number">
+                    </p>
+
+                    <p class="ad-w-1/2 ad-pr-16">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Employee
+                            Designation</label>
+                        <input value="Designation" name="designation" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8" type="text" data-error-default="Employee Designation" placeholder="Employee Designation">
+                    </p>
+                </section>
+            </section>
+
+            <div class="ad-py-8 ad-flex ad-items-center">
+                <input type="checkbox" class="toggleCheckbox" id="randomClass1" style="display:none">
+                <label for="randomClass1" class="toggle ad-mr-16">
+                    <span>
+                    </span>
+                </label>
+                <label class="ad-font-semibold">Can Publish Disclosure</label>
+            </div>
+            <p class="ad-text-blue-shadeTwo ad-flex ad-items-center ad-mt-16">
+                <input data-field="required" type="checkbox" class="ad-mr-8 ad-inline-block">I confirm that I am requesting to add a new secondary user to my workspace
+            </p>
+            <p class="ad-flex ad-justify-end ad-py-32">
+                <button class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12 ad-mr-16">Cancel</button>
+                <button type="submit" class="ad-bg-blue-shadeFour ad-text-white ad-text-12 ad-py-8 ad-px-12 ad-rounded-2">Submit</button>
+            </p>
+        </section>
+    </section>
+</section>
