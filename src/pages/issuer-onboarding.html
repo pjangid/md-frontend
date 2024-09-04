@@ -1,0 +1,174 @@
+<section class="ad-bg-white ad-border-b-1 ad-border-gray-shadeOne">
+    <section class="ad-container ad-py-24 ad-flex ad-justify-between">
+        <h3 class="ad-text-22 ad-text-blue-header">Register Issuer</h3>
+    </section>
+</section>
+
+<section>
+    <section style="width: 647px; margin: 0 auto;">
+        <form id="issuer-onboarding" data-function="issuerOnboardingTest" method="POST" action="/" autocomplete="off">
+            <div class="re-child-slide-up">
+                <p class="ad-mt-32">
+                    <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Issuer Name</label>
+                    <input id="unique-issuer-name" name="issuer-name" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8" type="text" data-error-default="issuer name" placeholder="Issuer Name" data-validation-type="allowspaces">
+                </p>
+                <p class="ad-mt-20">
+                    <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Legal Entity Identifer</label>
+                    <input id="legal-entity-identifier" name="legal-identifier" class="ad-block disableSection ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8" type="text" data-error-default="legal entity identifer"
+                        placeholder="Legal Identifer" data-validation-type="allowspaces">
+                </p>
+                <section class="ad-pt-32 ad-mb-24">
+                    <h3 class="ad-text-blue-header ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-pb-8 ad-leading-20">
+                        Security Information
+                    </h3>
+                </section>
+                <section id="securityContainer">
+                </section>
+
+                <label id="add-anotherSecurity" class="ad-text-blue-shadeFour ad-cursor-pointer ad-text-12 ad-flex ad-items-center">
+                    <svg class="ad-inline ad-mr-8" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 1C4.2 1 1 4.2 1 8C1 11.8 4.2 15 8 15C11.8 15 15 11.8 15 8C15 4.2 11.8 1 8 1ZM12 9H9V12H7V9H4V7H7V4H9V7H12V9Z"
+                            fill="#0051A2" />
+                    </svg>Add another security</label>
+                <section>
+                    <section style="height: 0;" class="ad-my-40 ad-text-12 ad-text-center ad-border-solid ad-border-b-1 ad-border-blue-shadeOne">
+                        <label class="ad-px-24 ad-cursor-pointer ad-hidden ad-relative ad-text-blue-shadeFour ad-inline-block ad-bg-gray-shadeThree" style="top: -12px; display: inline;">
+                        <svg class="ad-inline ad-mr-4" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14 8C14 4.7 11.3 2 8 2C4.7 2 2 4.7 2 8C2 11.3 4.7 14 8 14C11.3 14 14 11.3 14 8ZM11 7H5V9H11V7Z"
+                                fill="#0051A2"></path>
+                        </svg>
+            
+                        <span>Include Reporting Entity</span>
+                    </label>
+                    </section>
+                    <div class="ad-mb-24 ad-w-full">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Reporting Entity</label>
+                        <div class="dropDownControl default  ad-w-full ad-p-12" data-error-default="Selected valid disclosure type">
+                            <p class="ad-flex ad-justify-between ad-items-center">
+                                <label class="selectValue ad-text-blue-header">Select Reporting Entity</label>
+                                <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088"></path>
+                            </svg>
+                            </p>
+                            <div style="width: 100%;" class="dropdown-list">
+                                <ul>
+                                    <li><a data-value="1" href="">Company 1</a></li>
+                                    <li><a data-value="2" href="">Compnay 2</a></li>
+                                    <li><a data-value="3" href="">COmpany 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="ad-mb-24 ad-w-full">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Comments</label>
+                        <textarea class="ad-w-full ad-p-12" style="resize: none;height: 100px;"></textarea>
+                    </div>
+                </section>
+            </div>
+            <p class="ad-text-blue-shadeTwo ad-flex ad-items-center ad-pt-32 ad-mt-8">
+                <input data-field="required" type="checkbox" class="ad-mr-8 ad-inline-block"> I confirm that I want to register this issuer</p>
+            <section id="additionalReportingEntity">
+
+            </section>
+            <p class="ad-flex ad-justify-end ad-py-32">
+                <button class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12 ad-mr-16">Cancel</button>
+                <button type="submit" class="ad-bg-blue-shadeFour ad-text-white ad-text-12 ad-py-8 ad-px-12 ad-rounded-2">Submit</button>
+            </p>
+        </form>
+    </section>
+</section>
+<!-- Success Message -->
+<section id="succes-message-report" class="ad-hidden">
+    <section class="ad-py-40 ad-px-24 ad-bg-white ad-mb-16 ad-text-center">
+        <h4 class="ad-text-18 ad-font-semibold ad-mb-8 ad-text-blue-header">Issuer Registered</h4>
+        <p class="ad-text-blue-shadeFive ad-mb-20"><label id="success-message-onboarding"></label> has been registered successfully.</p>
+        <a href="/" class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12">Close</a>
+    </section>
+</section>
+
+<section id="disclosureType" class="ad-hidden">
+    <ul>
+        <li><a data-value="Equity" href="">Equity</a></li>
+        <li><a data-value="Debenture" href="">Debenture</a></li>
+        <li><a data-value="Sukuk" href="">Sukuk</a></li>
+    </ul>
+</section>
+
+<ul id="dynamicCompaniesList" class="ad-hidden">
+    <li><a data-value="1" href="">Company 1</a></li>
+    <li><a data-value="2" href="">Compnay 2</a></li>
+    <li><a data-value="3" href="">COmpany 3</a></li>
+</ul>
+<ul id="micodelistListElement" class="ad-hidden">
+    <li><a data-value="1" href="">Data One</a></li>
+    <li><a data-value="2" href="">Data Two</a></li>
+    <li><a data-value="3" href="">Data Two</a></li>
+    <li><a data-value="4" href="">Data Two</a></li>
+    <li><a data-value="5" href="">Data Two</a></li>
+</ul>
+
+<script>
+    var payload = {
+        "reportingissuer": {
+            "Title": "Test Reporting issuer",
+            "securityDetails": [{
+                "SecurityName": "",
+                "ISINCode": "",
+                "SecurityTypeID": "",
+                "MICCode": "",
+                "Ticker": ""
+            }]
+        }
+    };
+
+    function validateOnboardingForm(event) {
+        let secutiryDetails = event.target.querySelectorAll('#securityContainer > section');
+        let securityDetail = [];
+        secutiryDetails.forEach((element, index) => {
+            let inputs = element.querySelectorAll("input");
+            let select = element.querySelectorAll(".dropDownControl.onboarding");
+            let status = element.querySelectorAll(".dropDownControl.status");
+            let selectValue = $(select).data('value');
+            let statusValue = $(status).data('value');
+            let details = {
+                SecurityTypeID: selectValue,
+                Status: statusValue
+            }
+            inputs.forEach((elem) => {
+                if (elem.name == "security-name") {
+                    details.SecurityName = elem.value
+                } else if (elem.name == "isin-code") {
+                    details.ISINCode = elem.value;
+                } else if (elem.name == "mic-code") {
+                    details.MICCode = elem.value
+                } else if (elem.name == "ticker") {
+                    details.Ticker = elem.value
+                } else if (elem.name == "coupon-rate") {
+                    details.CouponRate = elem.value
+                } else if (elem.name == "maturity-date") {
+                    details.MaturityDate = elem.value
+                }
+            })
+            securityDetail[index] = details;
+        });
+
+        payload.reportingissuer.securityDetails = securityDetail;
+        let issuerName = document.getElementById("unique-issuer-name").value
+        payload.reportingissuer.Title = issuerName;
+        let selectedEntityID = $("#additionalReportingEntity .dropDownControl.default").data('value')
+
+        console.log(payload.reportingissuer)
+
+        // if api success
+        $("#succes-message-report").removeClass('ad-hidden').addClass('ad-flex')
+        $("#success-message-onboarding").text(issuerName)
+        event.preventDefault()
+    }
+</script>

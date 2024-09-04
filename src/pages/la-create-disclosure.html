@@ -1,0 +1,381 @@
+<form action="/newdisclosure" method="POST" data-function="myFunction(event)">
+    <section>
+        <section style="width: 647px; margin: 0 auto;" class="ad-py-40">
+            <section class="ad-pt-24">
+                <h3 class="ad-text-blue-header ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-py-8 ad-leading-20">
+                    Publish As
+                </h3>
+            </section>
+            <section>
+                <!-- Master Radio Block for template mounting -->
+                <div class="ad-text-blue-header ad-mb-40">
+                    <div class="radio ad-flex ad-items-center ad-py-12">
+                        <input id="radioAnnouncement" name="radio" type="radio" checked>
+                        <label for="radioAnnouncement" class="radio-label"></label>
+                        <div style="line-height: 1.3;" class="ad-flex ad-items-center">
+                            <label style="height: 32px;width:32px;" class="ad-bg-gray-shadeTwo ad-ml-16 ad-mr-8 ad-font-12 ad-flex ad-justify-center ad-items-center ad-text-white ad-rounded-4">LA</label>
+                            <p>
+                                <label class="ad-text-blue-header ad-font-semibold  ad-block">Listing Authority Annoncements</label>
+                                <label class="ad-text-gray-shadeTwo ad-text-12  ad-block">Publish an announcement without reporting entity information</label>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="radio ad-flex ad-items-center ad-pb-12 ad-pt-4">
+                        <input id="radioREPublish" name="radio" type="radio">
+                        <label for="radioREPublish" class="radio-label"></label>
+                        <div style="line-height: 1.3;" class="ad-flex ad-items-center">
+                            <label style="height: 32px;width:32px;" class="ad-bg-brown-shadeOne ad-ml-16 ad-mr-8 ad-font-12 ad-flex ad-justify-center ad-items-center ad-text-white ad-rounded-4">RE</label>
+                            <p>
+                                <label class="ad-text-blue-header ad-font-semibold  ad-block">Reporting Entity</label>
+                                <label class="ad-text-gray-shadeTwo ad-text-12  ad-block">Publish dislcosure or security specific announcement</label>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Listing Authority Announcement starts here -->
+            <section class="section-block">
+
+                <h3 class="slider-activator-custom ad-hidden reporting-entity-block ad-mt-16 ad-text-blue-header ad-flex ad-justify-between ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-pb-8 ad-leading-20">
+                    <label>Reporting Entity Information</label>
+                    <span class="">
+                        <svg class="ad-inline" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.5L19.5 15L18.45 16.05L12 9.6L5.55 16.05L4.5 15L12 7.5Z" fill="black"></path>
+                        </svg>
+                    
+                    </span>
+                </h3>
+
+                <section class="ksjdeksl ad-pt-32 reporting-entity-block section-block ad-hidden">
+                    <p class="ad-flex ad-mb-32 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-4">
+                        <button type="button" id="disclosureReportingEntity" class="ad-w-1/2 ad-text-blue-shadeFour ad-text-white ad-py-8 ad-px-12 ad-bg-blue-shadeFour">Disclosure</button>
+                        <button type="button" id="securityAnnouncementButton" class="ad-w-1/2 ad-text-blue-shadeFour ad-py-8 ad-px-12">Security Announcement</button>
+                    </p>
+                    <section id="securityAnnouncementContainer" class="ad-hidden section-block">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold ">Action</label>
+                        <div class="ad-text-blue-header ad-mb-24 ad-flex">
+                            <div style="margin-left:0" class="radio ad-items-center ad-pr-16">
+                                <input id="listRadio" name="action" type="radio" checked="">
+                                <label for="listRadio" class="radio-label ad-cursor-pointer">List</label>
+                            </div>
+                            <div class="radio ad-items-center ad-pr-16">
+                                <input id="delistRadio" name="action" type="radio">
+                                <label for="delistRadio" class="radio-label ad-cursor-pointer">Delist</label>
+                            </div>
+                            <div class="radio ad-items-center ad-pr-16">
+                                <input id="suspendRadio" name="action" type="radio">
+                                <label for="suspendRadio" class="radio-label ad-cursor-pointer">Suspend</label>
+                            </div>
+                            <div class="radio ad-items-center ad-pr-16">
+                                <input id="liftSuspensionRadio" name="action" type="radio">
+                                <label for="liftSuspensionRadio" class="radio-label ad-cursor-pointer">Lift Suspension</label>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="ad-w-full ad-mb-24">
+                            <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold ">Reporting Entity Name</label>
+                            <div class="dropDownControl default ad-w-full ad-p-12 " data-error-default="Selected valid disclosure type ">
+                                <p class="ad-flex ad-justify-between ad-items-center ">
+                                    <label class="selectValue ad-text-blue-header ">Select or search reporting entity here</label>
+                                    <svg class="ad-inline-block " width="16 " height="16 " viewBox="0 0 16 16 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                    <path fill-rule="evenodd " clip-rule="evenodd " d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z " fill="#668088 "></path>
+                                </svg>
+                                </p>
+                                <div style="width: 100%; display: none;" class="dropdown-list ">
+                                    <div class="ad-bg-white ad-py-8">
+                                        <p class="ad-bg-white ad-flex ad-mx-12 ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2">
+                                            <input data-field="not-required" class="ad-bg-white ad-pl-12 ad-w-full ad-text-blue-header single-select-search-dropdown" type="text" placeholder="Search Disclosure Type">
+                                            <span class="ad-px-12 ad-py-8">
+                                                    <svg class="ad-inline" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 17.8687L14.0312 13.125C16.3746 10.2976 16.0822 6.12774 13.3672 3.65505C10.6522 1.18236 6.47324 1.2799 3.87657 3.87657C1.2799 6.47324 1.18236 10.6522 3.65505 13.3672C6.12774 16.0822 10.2976 16.3746 13.125 14.0312L17.8687 18.75L18.75 17.8687ZM3.125 8.75C3.125 5.64339 5.64339 3.125 8.75 3.125C11.8566 3.125 14.375 5.64339 14.375 8.75C14.375 11.8566 11.8566 14.375 8.75 14.375C5.64339 14.375 3.125 11.8566 3.125 8.75Z" fill="#668088"></path>
+                                                    </svg>
+                                                </span>
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li><a data-value="1 " href=" ">Option</a></li>
+                                        <li><a data-value="2 " href=" ">Option</a></li>
+                                        <li><a data-value="3 " href=" ">Option</a></li>
+                                        <li><a data-value="4 " href=" ">Option</a></li>
+                                        <li><a data-value="5 " href=" ">Option</a></li>
+                                        <li><a data-value="6 " href=" ">Option</a></li>
+                                        <li><a data-value="7 " href=" ">Option</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ad-w-full ad-mb-24">
+                            <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Issuer Name</label>
+                            <div class="dropDownControl multiselect-Without-Chip disclosure commonDropdown ad-p-12 ad-w-full" data-dynamic-variable="myissuerlacreatedisclosre">
+                                <div class="ad-justify-between ad-items-center">
+                                    <div>
+                                        <div>
+                                            <p class="ad-flex ad-justify-between ad-items-center">
+                                                <label class="selectValue ad-text-blue-header applyEllipsis">Search issuer here</label>
+                                                <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088"></path>
+                                                    </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: none;margin-top: 2px;" class="dropdown-list ad-py-12 ad-bg-white">
+                                    <p class="ad-bg-white ad-flex ad-mx-12 ad-mb-12 ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2">
+                                        <input data-field="not-required" class="ad-bg-white ad-pl-12 ad-w-full ad-text-blue-header multiselect-search-within-dropdown" type="text" placeholder="Search for issuer">
+                                        <span class="ad-px-12 ad-py-8">
+                                                <svg class="ad-inline" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 17.8687L14.0312 13.125C16.3746 10.2976 16.0822 6.12774 13.3672 3.65505C10.6522 1.18236 6.47324 1.2799 3.87657 3.87657C1.2799 6.47324 1.18236 10.6522 3.65505 13.3672C6.12774 16.0822 10.2976 16.3746 13.125 14.0312L17.8687 18.75L18.75 17.8687ZM3.125 8.75C3.125 5.64339 5.64339 3.125 8.75 3.125C11.8566 3.125 14.375 5.64339 14.375 8.75C14.375 11.8566 11.8566 14.375 8.75 14.375C5.64339 14.375 3.125 11.8566 3.125 8.75Z" fill="#668088"></path>
+                                                </svg>
+                                            </span>
+                                    </p>
+                                    <ul class="multiselectUL multiselect-list-element" style="max-height: 250px;overflow: scroll;overflow-x: hidden;background-color: #fff;">
+                                        <li>
+                                            <a data-value="someid" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                                                    alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Stadeos</span></a>
+                                        </li>
+                                        <li>
+                                            <a data-value="someid" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                                                    alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Stadeos</span></a>
+                                        </li>
+                                        <li>
+                                            <a data-value="someid" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                                                    alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Stadeos</span></a>
+                                        </li>
+                                        <li>
+                                            <a data-value="someid" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                                                    alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Stadeos</span></a>
+                                        </li>
+                                        <li>
+                                            <a data-value="someid" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                                                    alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Stadeos</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ad-w-full ad-mb-40">
+                            <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Ticker</label>
+                            <div class="dropDownControl multiselect-Without-Chip disclosure commonDropdown ad-p-12 ad-w-full" data-dynamic-variable="myCustomVariableDeclaration">
+                                <div class="ad-justify-between ad-items-center">
+                                    <div>
+                                        <div>
+                                            <p class="ad-flex ad-justify-between ad-items-center">
+                                                <label class="selectValue ad-text-blue-header applyEllipsis">Select Tickers</label>
+                                                <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088"></path>
+                                                    </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: none;margin-top: 2px;" class="dropdown-list ad-py-12 ad-bg-white">
+                                    <p class="ad-bg-white ad-flex ad-mx-12 ad-mb-12 ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2">
+                                        <input data-field="not-required" class="ad-bg-white ad-pl-12 ad-w-full ad-text-blue-header multiselect-search-within-dropdown" type="text" placeholder="Search for ticker">
+                                        <span class="ad-px-12 ad-py-8">
+                                                <svg class="ad-inline" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 17.8687L14.0312 13.125C16.3746 10.2976 16.0822 6.12774 13.3672 3.65505C10.6522 1.18236 6.47324 1.2799 3.87657 3.87657C1.2799 6.47324 1.18236 10.6522 3.65505 13.3672C6.12774 16.0822 10.2976 16.3746 13.125 14.0312L17.8687 18.75L18.75 17.8687ZM3.125 8.75C3.125 5.64339 5.64339 3.125 8.75 3.125C11.8566 3.125 14.375 5.64339 14.375 8.75C14.375 11.8566 11.8566 14.375 8.75 14.375C5.64339 14.375 3.125 11.8566 3.125 8.75Z" fill="#668088"></path>
+                                                </svg>
+                                            </span>
+                                    </p>
+                                    <ul class="multiselectUL multiselect-list-element" style="max-height: 250px;overflow: scroll;overflow-x: hidden;background-color: #fff;">
+                                        <li>
+                                            <a data-value="someid" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis">
+                                                <img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                                                    alt="">
+                                                <label class="ad-inline-flex ad-pr-12 ad-justify-between ad-w-full">
+                                                    <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Stadeos</span>
+                                                    <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis ad-text-right" style="top: 1px;">Security Name</span>
+                                                </label>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </section>
+
+                <h3 class="slider-activator-custom ad-mt-16 ad-text-blue-header ad-flex ad-justify-between ad-text-18 ad-font-bold ad-border-b-1 ad-border-gray-shadeOne ad-pb-8 ad-leading-20">
+                    <label class="announcement-block common">Announcement</label>
+                    <label class="reporting-entity-block common ad-hidden">Disclosure</label>
+                    <span class="">
+                        <svg class="ad-inline" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.5L19.5 15L18.45 16.05L12 9.6L5.55 16.05L4.5 15L12 7.5Z" fill="black"></path>
+                        </svg>
+                    
+                    </span>
+                </h3>
+                <section class="izqjypkhoc ad-pt-24">
+                    <p class="ad-pb-24">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Title</label>
+                        <input id="new-document-title" name="document-title" class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8" type="text" data-error-default="document title" placeholder="Document Title">
+                    </p>
+                    <section class="ad-pb-24 ad-flex ad-justify-between">
+                        <div class="ad-w-1/2">
+                            <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Disclosure
+                                Type</label>
+                            <div class="dropDownControl default ad-w-full ad-p-12" data-error-default="Selected valid disclosure type">
+                                <p class="ad-flex ad-justify-between ad-items-center">
+                                    <label class="selectValue ad-text-blue-header">Disclosure type</label>
+                                    <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z"
+                                            fill="#668088"></path>
+                                    </svg>
+                                </p>
+                                <div style="width: 100%;" class="dropdown-list">
+                                    <div class="ad-bg-white ad-py-8">
+                                        <p class="ad-bg-white ad-flex ad-mx-12 ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2">
+                                            <input data-field="not-required" class="ad-bg-white ad-pl-12 ad-w-full ad-text-blue-header single-select-search-dropdown" type="text" placeholder="Search Disclosure Type">
+                                            <span class="ad-px-12 ad-py-8">
+                                                    <svg class="ad-inline" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 17.8687L14.0312 13.125C16.3746 10.2976 16.0822 6.12774 13.3672 3.65505C10.6522 1.18236 6.47324 1.2799 3.87657 3.87657C1.2799 6.47324 1.18236 10.6522 3.65505 13.3672C6.12774 16.0822 10.2976 16.3746 13.125 14.0312L17.8687 18.75L18.75 17.8687ZM3.125 8.75C3.125 5.64339 5.64339 3.125 8.75 3.125C11.8566 3.125 14.375 5.64339 14.375 8.75C14.375 11.8566 11.8566 14.375 8.75 14.375C5.64339 14.375 3.125 11.8566 3.125 8.75Z" fill="#668088"></path>
+                                                    </svg>
+                                                </span>
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li><a data-value="1" href="">Test</a></li>
+                                        <li><a data-value="2" href="">Vest</a></li>
+                                        <li><a data-value="3" href="">Protest</a></li>
+                                        <li><a data-value="4" href="">Simplest</a></li>
+                                        <li><a data-value="5" href="">fought</a></li>
+                                        <li><a data-value="6" href="">gith</a></li>
+                                        <li><a data-value="7" href="">Option</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ad-w-1/2 ad-pl-16 section-block announcement-block">
+                            <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">MIC Code</label>
+                            <div class="dropDownControl multiselect-Without-Chip disclosure commonDropdown ad-p-12 ad-w-full" data-prerender="data1,data2,c5kned2a5b7+6dsmfjt/OCOfnnOa/n9g/PV2gxvzEtvrCs58bjca8A==" data-dynamic-variable="myCustomVariableDeclaration">
+                                <div class="ad-justify-between ad-items-center">
+                                    <div>
+                                        <div>
+                                            <p class="ad-flex ad-justify-between ad-items-center">
+                                                <label class="selectValue ad-text-blue-header applyEllipsis">Search/Select MIC Code</label>
+                                                <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088"></path>
+                                                    </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: none;" class="dropdown-list ad-py-12 ad-bg-white">
+                                    <p class="ad-bg-white ad-flex ad-mx-12 ad-mb-12 ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2">
+                                        <input data-field="not-required" class="ad-bg-white ad-pl-12 ad-w-full ad-text-blue-header multiselect-search-within-dropdown" type="text" placeholder="Select MIC Code">
+                                        <span class="ad-px-12 ad-py-8">
+                                                <svg class="ad-inline" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 17.8687L14.0312 13.125C16.3746 10.2976 16.0822 6.12774 13.3672 3.65505C10.6522 1.18236 6.47324 1.2799 3.87657 3.87657C1.2799 6.47324 1.18236 10.6522 3.65505 13.3672C6.12774 16.0822 10.2976 16.3746 13.125 14.0312L17.8687 18.75L18.75 17.8687ZM3.125 8.75C3.125 5.64339 5.64339 3.125 8.75 3.125C11.8566 3.125 14.375 5.64339 14.375 8.75C14.375 11.8566 11.8566 14.375 8.75 14.375C5.64339 14.375 3.125 11.8566 3.125 8.75Z" fill="#668088"></path>
+                                                </svg>
+                                            </span>
+                                    </p>
+                                    <ul class="multiselectUL multiselect-list-element" style="max-height: 250px;overflow: scroll;overflow-x: hidden;background-color: #fff;">
+                                        <li>
+                                            <a data-value="data1" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                                                    alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Some Data</span></a>
+                                        </li>
+                                        <li>
+                                            <a data-value="data2" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                                                    alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Some Data 2</span></a>
+                                        </li>
+                                        <li>
+                                            <a data-value="date3" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                                                    alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Some Data 3</span></a>
+                                        </li>
+                                        <li>
+                                            <a data-value="c5kned2a5b7+6dsmfjt/OCOfnnOa/n9g/PV2gxvzEtvrCs58bjca8A==" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                                                    alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Stadeos ds</span></a>
+                                        </li>
+                                        <li>
+                                            <a data-value="c5kned2a5b7+6dsmfjt/OCOfnnOa/n9g/PsddsfV2gxvzEtvrCs58bjca8A==" href="" class="ad-border-solid ad-border-b-1 ad-border-gray-shadeOne applyEllipsis"><img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVHgB7ZSxDYMwEEW/D1OAKIyUAewRMkI2yAiMlhGyQUbICGYEK0RQYKzcRRRpjVIhXmVZuie7uKfAeO8NUer4aJBHSInuzrlescSWJR513dii0FmWZYkYx3c/zzhrIlxF0rYnbMQOw6sjIJncl/yyzhrCnzhEh2i3IgoxRmxlnQ2SEcMZeVZVY7XOW16RTNM3IxclF9IkyYmUIMvEv0kJNw5b+ADtBziryk+hcQAAAABJRU5ErkJggg=="
+                                                    alt=""> <span class="ad-relative ad-ml-4 ad-w-full applyEllipsis" style="top: 1px;">Stadeos</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="document-drop" class="ad-py-22 ad-text-center ad-rounded-2 ad-bg-blue-shadeEight" ondrop="disclosureDropHandler(event);" ondragover="disclosureDragOverHandler(event);">
+                        <p class="ad-text-center ad-pb-8">
+                            <img class="ad-inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADxSURBVHgB7ZXdDYIwFIVPiwM4gs8+OYITGGUAhUmoE+gGiAMobuAWvroIVirRNIDQP2OM/V4gl+aej7TpBf4d0qjM0wgk2JRvQ7jlCs4Z8lUmF2ljGQmSD4QLRiBkWy8OWhcKjksClyz2HC0/RvFlflwgzBjClMEC830W4ZwkVZdijUPMYEAAE+TwB3SK8YzgcjpDE32BRridhN4ZkMM5j151XsTVs7xDNM+EukA9XL7R8nhnKqEm0BVuKdEvoBJuIUGdhRtKUKfhBhLvBW6UG4W3STx7aTNPJ53fxYSrppx5DytUBHrw49gLeAEv4AU8d/AthznKHgPxAAAAAElFTkSuQmCC"
+                                alt="">
+                        </p>
+                        <h3 class="ad-text-blue-shadeNine ad-font-bold">Drag and drop a disclosure document up to 40MB</h3>
+                        <section class="ad-text-blue-shadeNine">
+                            <input id="original-file-button" class="ad-hidden" type="file" name="myfile" accept=".pdf" /> or
+                            <button class="ad-text-blue-shadeFour ad-underline" type="button" id="new-file-document">
+                                browse
+                            </button> to choose a PDF file
+                        </section>
+                    </section>
+                    <section class="ad-flex ad-justify-between ad-p-16 ad-border-solid ad-border-1 ad-border-gray-shadeFour ad-rounded-2">
+                        <label class="ad-text-blue-shadeFour">Disclosure_Disclosure_File_Name.pdf</label>
+                        <button class="ad-text-red-error">Remove</button>
+                    </section>
+                    <p class="section-block announcement-block ad-text-blue-shadeTwo ad-flex ad-items-center ad-pt-8 ad-mt-16">
+                        <input data-field="required" type="checkbox" class="ad-mr-8 ad-inline-block"> I confirm that I want to publish this announcement onto the ADGM Disclosure Platform
+                    </p>
+                    <p class="section-block ad-hidden reporting-entity-block ad-text-blue-shadeTwo ad-flex ad-items-center ad-pt-8 ad-mt-16">
+                        <input data-field="required" type="checkbox" class="ad-mr-8 ad-inline-block"> I confirm that I want to publish this disclosure
+                    </p>
+                </section>
+            </section>
+            <!-- Listing Authority Announcement ends here -->
+
+
+            <!-- Reporting Entity starts here -->
+            <section id="publish-reporting-entity" class="ad-hidden section-block">
+
+            </section>
+            <!-- Reporting Entity starts here -->
+
+            <section class="ad-py-16 ad-flex ad-justify-end ad-mt-20">
+                <button type="button" class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12 ad-mr-16">Cancel</button>
+                <button type="submit" class="ad-bg-blue-shadeFour ad-text-white ad-text-12 ad-py-8 ad-px-12 ad-rounded-2">Submit</button>
+            </section>
+        </section>
+    </section>
+</form>
+
+<script>
+    var myCustomVariableDeclaration = [];
+    var myissuerlacreatedisclosre = [];
+
+    function disclosureDropHandler(ev) {
+        ev.preventDefault();
+        if (ev.dataTransfer.items) {
+            if (ev.dataTransfer.items.length > 1) {
+                alert("Only one pdf file can be uploaded")
+            } else {
+                let file = ev.dataTransfer.items[0].getAsFile();
+                if (file.type !== "application/pdf") {
+                    alert("Only pdf files accepted")
+                } else if (file.type == "application/pdf") {
+                    alert("success")
+                }
+            }
+        } else {
+            //    Any other error
+        }
+    }
+
+    function disclosureDragOverHandler(ev) {
+        ev.preventDefault();
+    }
+
+    function myFunction(event) {
+        alert("asdf")
+            // event.preventDefault()
+    }
+</script>

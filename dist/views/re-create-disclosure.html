@@ -1,0 +1,188 @@
+<form action="/">
+    <section>
+        <section style="width: 647px; margin: 0 auto;" class="ad-py-40">
+            <section class="ad-pt-24">
+                <h3 class="ad-text-blue-header ad-text-22 ad-font-bold ad-py-4 ad-leading-20">
+                    Create New Disclosure
+                </h3>
+                <p class="ad-text-blue-shadeFive">Start writing or upload a disclosure document</p>
+            </section>
+            <section class="">
+                <section class="izqjypkhoc ad-pt-32">
+                    <p class="ad-pb-24 ad-relative">
+                        <label class="ad-text-blue-header ad-mb-4 ad-leading-20 ad-block ad-font-bold">Title <span
+                                class="ad-text-red-error">*</span></label>
+                        <input id="new-document-title" name="document-title"
+                            class="ad-block ad-border-solid ad-border-1 ad-border-gray-shadeOne ad-rounded-2 ad-w-full ad-p-12 ad-text-blue-header ad-mb-8"
+                            type="text" data-error-default="document title" placeholder="Document Title">
+
+                    </p>
+                    <section id="document-drop" class="ad-py-22 ad-text-center ad-rounded-2 ad-bg-blue-shadeEight"
+                        ondrop="disclosureDropHandler(event);" ondragover="disclosureDragOverHandler(event);">
+                        <p class="ad-text-center ad-pb-8">
+                            <img class="ad-inline"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADxSURBVHgB7ZXdDYIwFIVPiwM4gs8+OYITGGUAhUmoE+gGiAMobuAWvroIVirRNIDQP2OM/V4gl+aej7TpBf4d0qjM0wgk2JRvQ7jlCs4Z8lUmF2ljGQmSD4QLRiBkWy8OWhcKjksClyz2HC0/RvFlflwgzBjClMEC830W4ZwkVZdijUPMYEAAE+TwB3SK8YzgcjpDE32BRridhN4ZkMM5j151XsTVs7xDNM+EukA9XL7R8nhnKqEm0BVuKdEvoBJuIUGdhRtKUKfhBhLvBW6UG4W3STx7aTNPJ53fxYSrppx5DytUBHrw49gLeAEv4AU8d/AthznKHgPxAAAAAElFTkSuQmCC"
+                                alt="">
+                        </p>
+                        <h3 class="ad-text-blue-shadeNine ad-font-bold">Drag and drop a disclosure document up to 40MB
+                        </h3>
+                        <section class="ad-text-blue-shadeNine">
+                            <input id="original-file-button" class="ad-hidden" type="file" name="myfile" accept=".pdf">
+                            or
+                            <button class="ad-text-blue-shadeFour ad-underline" type="button" id="new-file-document">
+                                browse
+                            </button>
+                            to choose a PDF file
+                        </section>
+                    </section>
+                    <section
+                        class="ad-flex ad-justify-between ad-p-16 ad-border-solid ad-border-1 ad-border-gray-shadeFour ad-rounded-2">
+                        <label class="ad-text-blue-shadeFour">Disclosure_Disclosure_File_Name.pdf</label>
+                        <button type="button" class="ad-text-red-error">Remove</button>
+                    </section>
+
+                    <div class="ad-pb-24 ad-mt-32">
+                        <div class="ad-w-full" id="issuerDropDownContainer">
+                            <div class="ad-mb-24 ad-w-full">
+                                <div class="dropDownControl tickerDropdownElement disclosure ad-w-full ad-p-12"
+                                    data-error-default="Selected valid disclosure type">
+                                    <div class="ad-flex ad-justify-between ad-items-center">
+                                        <div style="width: 95%;">
+                                            <div>
+                                                <p id="bindChipListTicker">
+                                                    <label class="selectValue ad-text-blue-header">Select tickers</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p style="width: 5%;text-align: right;">
+                                            <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z"
+                                                    fill="#668088"></path>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                    <div style="width: 100%; display: none;" class="dropdown-list">
+                                        <p class="ad-bg-white ad-mt-8 ad-pr-12 ad-py-8 ad-flex">
+                                            <span class="ad-px-12 ad-py-8">
+                                                <svg class="ad-inline" width="20" height="20" viewBox="0 0 20 20"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M18.75 17.8687L14.0312 13.125C16.3746 10.2976 16.0822 6.12774 13.3672 3.65505C10.6522 1.18236 6.47324 1.2799 3.87657 3.87657C1.2799 6.47324 1.18236 10.6522 3.65505 13.3672C6.12774 16.0822 10.2976 16.3746 13.125 14.0312L17.8687 18.75L18.75 17.8687ZM3.125 8.75C3.125 5.64339 5.64339 3.125 8.75 3.125C11.8566 3.125 14.375 5.64339 14.375 8.75C14.375 11.8566 11.8566 14.375 8.75 14.375C5.64339 14.375 3.125 11.8566 3.125 8.75Z"
+                                                        fill="#668088"></path>
+                                                </svg>
+                                            </span>
+                                            <input id="tickerListSearch" data-field="not-required"
+                                                class="ad-bg-white ad-w-full ad-text-blue-header" type="text"
+                                                placeholder="Search for Issuers">
+                                        </p>
+                                        <ul class="multiselectUL" id="tickerListElement" style="
+                                                        max-height: 250px;
+                                                        overflow: scroll;
+                                                        overflow-x: hidden;
+                                                    ">
+                                            <li><a data-ticker="GOOGL"
+                                                    data-security="Long Security Name Goes Hehas something"
+                                                    data-security-type="Debentures"
+                                                    data-securitycode="BH000A0KEZD7&#8203;&#8203;&#8203;"
+                                                    data-status="active" data-id="id1" data-value="someid" href="">Alpha
+                                                    Star Holding III Limited</a></li>
+                                            <li><a data-ticker="GOOGL"
+                                                    data-security="So Long Security Name Goes Hehas something"
+                                                    data-security-type="Debentures"
+                                                    data-securitycode="BH000A0KEZD7&#8203;&#8203;&#8203;"
+                                                    data-status="listed" data-id="id2" data-value="someid2"
+                                                    href="">Company Name 2</a></li>
+                                            <li><a data-ticker="GOOGL"
+                                                    data-security="Nothing Security Name Goes Hehas something"
+                                                    data-security-type="Debentures"
+                                                    data-securitycode="BH000A0KEZD7&#8203;&#8203;&#8203;"
+                                                    data-status="active" data-id="id3" data-value="someid3"
+                                                    href="">Company Name 3</a></li>
+                                            <li><a data-ticker="GOOGL"
+                                                    data-security="Past Security Name Goes Hehas something"
+                                                    data-security-type="Debentures"
+                                                    data-securitycode="BH000A0KEZD7&#8203;&#8203;&#8203;"
+                                                    data-status="active" data-id="id4" data-value="someid4"
+                                                    href="">Company Name 5</a></li>
+                                            <li><a data-ticker="GOOGL"
+                                                    data-security="Future Security Name Goes Hehas something"
+                                                    data-security-type="Debentures"
+                                                    data-securitycode="BH000A0KEZD7&#8203;&#8203;&#8203;"
+                                                    data-status="active" data-id="id5" data-value="someid5"
+                                                    href="">Alpha Star Holding III Limited Extra Word Added</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropDownControl default ad-px-12 ad-py-12 ad-w-full">
+                            <p class="ad-flex ad-justify-between ad-items-center">
+                                <label style="width: 145px;" class="applyEllipsis ">Disclosure type</label>
+                                <svg class="ad-inline-block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11L3 5.99999L3.7 5.29999L8 9.59999L12.3 5.29999L13 5.99999L8 11Z" fill="#668088">
+                                    </path>
+                                </svg>
+                            </p>
+                            <div class="dropdown-list" style="display: none;">
+                                <ul style="max-height: 200px; overflow: scroll; overflow-x:hidden;">
+                                    <li class=""><a data-value="5" href="" class="applyEllipsis ">1 askd fsadf safd saf sdfasdf
+                                            sadfjl
+                                            askdfj aksfikf jalkf0</a></li>
+                                    <li class=""><a data-value="43" href="">20</a></li>
+                                    <li class=""><a data-value="43" href="">30</a></li>
+                                    <li class=""><a data-value="43" href="">40</a></li>
+                                    <li class=""><a data-value="43" href="">50</a></li>
+                                </ul>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <p class="ad-text-blue-shadeTwo ad-flex ad-items-center ad-pt-8 ad-mt-8">
+                        <input data-field="required" type="checkbox" class="ad-mr-8 ad-inline-block"> I confirm that I want to upload this disclosure on the ADGM Disclosure Platform</p>
+                </section>
+
+                <section class="ad-border-b-1 ad-border-gray-shadeOne ad-mt-40">
+                    <section class="ad-py-16 ad-flex ad-justify-between">
+                        <button
+                            class="ad-text-blue-shadeFour ad-font-semibold ad-text-12 ad-border-solid ad-border-1 ad-border-blue-shadeFour ad-rounded-2 ad-py-8 ad-px-12">Cancel</button>
+                        <p>
+                            <button type="button"
+                                class="ad-bg-blue-shadeEight ad-text-blue-shadeFour ad-text-12 ad-py-8 ad-px-12 ad-rounded-2">Save
+                                draft</button>
+                            <button type="submit"
+                                class="ad-bg-blue-shadeFour ad-text-white ad-text-12 ad-py-8 ad-px-12 ad-rounded-2">Submit</button>
+                        </p>
+                    </section>
+                </section>
+            </section>
+
+        </section>
+    </section>
+</form>
+
+<script>
+    var REDisclosureTickerList=[];
+    function disclosureDropHandler(ev) {
+        ev.preventDefault();
+        if (ev.dataTransfer.items) {
+            if (ev.dataTransfer.items.length > 1) {
+                alert("Only one pdf file can be uploaded")
+            } else {
+                let file = ev.dataTransfer.items[0].getAsFile();
+                if (file.type !== "application/pdf") {
+                    alert("Only pdf files accepted")
+                } else if (file.type == "application/pdf") {
+                    alert("success")
+                }
+            }
+        } else {
+        //    Any other error
+        }
+    }
+
+    function disclosureDragOverHandler(ev) {
+        ev.preventDefault();
+    }
+</script>
