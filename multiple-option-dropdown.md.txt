@@ -1,0 +1,30 @@
+# Multiple Option Dropdown (Filters)
+
+This is the document which will explaing of how to use & integrate the designed dropdown in filters for multiple option selection.
+Below are few of the feature of this dropdown. 
+
+  - No coding require to push/generate selected options
+  - Options selected are automatically pushed to custom defined variabled  
+  - Dropdown automatically taked data from querystring. So in case of reloading if the dropdown data exists in querystring. The dropdown options will mark itself selected and push the selected options in custom defined variables also. 
+
+# More
+
+  - This dropdown should only be used for filter options
+  - In case of any other use! which the dropdown is capable of, few modifications can be made in cloned js file. 
+
+### Implementation
+
+To implement the feature below are the steps you need to follow
+
+Copy the html from /src/modules/filter-dropdown-multiselect.html
+
+```sh
+$ add your custom unique ID
+$ change the filter key on data-filterkey
+$ add custom variable name on data-dynamic-variable
+$ define a function name setFilterMapping(#ID, #ID, #ID)
+```
+
+## Note
+Custom variable name is the one where all the selected option from the dropdown will be stored, So that you can programitacally fetch the values at you convenience
+`setFilterMapping` is a function where you defince that when the page reloads what all filter dropdowns needs to fetch values from the querystring. 
